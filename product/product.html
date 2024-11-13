@@ -7,7 +7,131 @@
     <link rel="stylesheet" href="./style-product.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>logo</h1>
+            </div>
+            <div class="search">
+                <input type="text" name="text" id="search-element" class="search-element">
+                <div class="search-glass">
+                    <img src="../img/header/searchglass.svg" alt="Search" class="search-glass-element">
+                </div>
+            </div>
+            <div class="header-action">
+                <ul class="header-action-list">
+                    <li>
+                        <div class="-header-cart">
+                            <a href="">
+                                <img src="../img/header/cart.png" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">Login/Cadastrar</a>
+                    </li>
+                    <li>
+                        <div class="profile">
+                            <a href="">
+                                <img src="../img/header/profile.png" alt="" class="profile-pic">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
+    <!-- PRODUTO -->
+    <main id="sessao-produto">
+
+        <!-- IMAGEM DESTAQUE -->
+        <img id="destaque" src="./img/guarda roupa 1.jpg" alt="guarda roupa marrom">
+        
+        <!-- DETALHES -->
+        <div id="detalhes">
+
+            <!-- AVALIAÇÕES -->
+            <div id="stars">
+                <img src="./img/star-svgrepo-com.svg" alt="">
+                <img src="./img/star-svgrepo-com.svg" alt="">
+                <img src="./img/star-svgrepo-com.svg" alt="">
+                <img src="./img/star-svgrepo-com.svg" alt="">
+                <img src="./img/star-svgrepo-com.svg" alt="">
+                <span> | 0 Avaliações</span>
+            </div>
+
+            <!-- DETALHES CONTINUAÇÃO -->
+            <h1>Guarda-Roupa com 3 Portas</h1>
+            <span id="valor">R$ 789,99</span>
+            <p>ESCOLHER VARIAÇÃO:</p>
+
+            <!-- GALERIA DE IMAGENS -->
+            <ul id="galeria">
+                <li><img src="./img/guarda roupa 1.jpg" alt="guarda roupa marrom"></li>
+                <li><img src="./img/guarda roupa 2.jpg" alt="guarda roupa marrom claro"></li>
+                <li><img src="./img/guarda roupa 3.jpg" alt="guarda roupa branco"></li>
+            </ul>
+
+              </div>
+        <!-- ADICIONAR AO CARRINHO -->
+        <a id="add-carrinho" href="/"><img src="./img/add_shopping_cart_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+    </main>
+    
+    <section>
+        <div id="comentarios">
+        <p id="mensagem-coment">SEM AVALIAÇÕES NO <br>
+            MOMENTO
+        </p>
+        </div>
+    </section>
+    <section>
+        <div id="comentar">
+            <div id="avalie">
+            <h2 id="avalie-text"> Avalie seu Produto</h2>
+            <div id="stars">
+                <img src="./img/star white.svg" alt="">
+                <img src="./img/star white.svg" alt="">
+                <img src="./img/star white.svg" alt="">
+                <img src="./img/star white.svg" alt="">
+                <img src="./img/star white.svg" alt="">
+            </div>
+            </div>
+            <div id="caixa">
+            <input id="mensagem" type="text">
+            
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div id="departaments">
+                <h3>departamentos</h3>
+                <a href="">sala</a>
+                <a href="">cozinha</a>
+                <a href="">quarto</a>
+                <a href="">banheiro</a>
+                <a href="">terraço</a>
+                <a href="">lavanderia</a>
+            </div>
+
+            <div id="contacts">
+                <h3>contatos</h3>
+                <span>telefone: (81) 90000-0000</span>
+                <span>email: nome@gmail.com</span>
+            </div>
+
+            <div id="socials">
+                <h3>redes sociais</h3>
+                <div class="footer-icons">
+                    <a href=""><img src="../img/footer/ri_instagram-fill.png" alt=""></a>
+                    <a href=""><img src="../img/footer/akar-icons_facebook-fill.png" alt=""></a>
+                    <a href=""><img src="../img/footer/Vector.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script-product.js"></script>
 </body>
 </html>

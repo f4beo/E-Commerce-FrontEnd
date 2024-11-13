@@ -1,0 +1,89 @@
+@import url(../global.css);
+
+
+/* MAIN */
+#sessao-produto{
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  gap: 15px;
+  padding: 30px;
+  height: 500px;
+}
+#destaque{
+  background-size: cover;
+  max-height: 500px;
+  width: 700px;
+}
+#stars{
+  display: flex;
+}
+
+#valor{
+  display: inline-block;
+  background-color: #B4D4EE;
+  text-align: center;
+  font-size: 32px;
+  padding: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 300px;
+  border-radius: 10px;
+}
+#galeria{
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  max-height: 300px;
+  max-width: 400px;
+  margin-top: 10px;
+}
+#galeria img{
+  border-radius: 10px;
+
+  height: 100px;
+}
+#add-carrinho{
+  justify-self: end;
+  align-self: end;
+}
+#add-carrinho img{
+  background-color: #0A2463;
+  padding: 25px;
+  border-radius: 50px;
+}
+/* COMENTARIOS */
+section{
+  margin-top: 40px;
+  padding: 10px;
+}
+#comentarios{
+  max-width: 100vw;
+  max-height: 500px;
+  background-color: #B4D4EE;
+ 
+}
+#mensagem-coment{
+  text-align: center;
+  font-size: 24px;
+  padding: 40px;
+}
+#comentar{
+   background-color: #0A2463;
+   padding: 10px;
+}
+#avalie{
+  display: flex;
+  gap: 20px;
+}
+#avalie-text{
+  color: aliceblue;
+}
+#mensagem{
+  max-width: 100vw;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  color: #333;
+  
+}
