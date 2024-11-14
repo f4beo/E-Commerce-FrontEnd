@@ -1,2 +1,18 @@
 @import url(../global.css);
 
+
+.box-recommends {
+    background-color: #fafafa;
+    width: 150px;
+    height: 150px;
+
+}
+
+.flex-items {
+    display: flex;
+}
+#add-carrinho img{
+    background-color: #0A2463;
+    padding: 5px;
+    border-radius: 50px;
+  }
