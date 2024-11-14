@@ -5,7 +5,8 @@
     background-color: #fafafa;
     width: 150px;
     height: 150px;
-
+    border-radius: 10px;
+    position: relative;
 }
 
 .flex-items {
@@ -15,4 +16,13 @@
     background-color: #0A2463;
     padding: 5px;
     border-radius: 50px;
-  }
+}
+
+/* .red-detail {
+    color: transparent;
+    background-color: #74121D;
+    width: 120px;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+} */
