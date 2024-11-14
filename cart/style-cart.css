@@ -1,16 +1,27 @@
 @import url(../global.css);
 
 
-.box-recommends {
+.box-recommended {
+    display: inline-block;
     background-color: #fafafa;
-    width: 150px;
+    min-width: 150px;
     height: 150px;
     border-radius: 10px;
+    margin: 20px;
     position: relative;
 }
 
 .flex-items {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    bottom: 5px;
+}
+.flex-items span {
+    font-weight: 600;
+    font-size: 20px;
+
 }
 #add-carrinho img{
     background-color: #0A2463;
@@ -18,11 +29,13 @@
     border-radius: 50px;
 }
 
-/* .red-detail {
-    color: transparent;
-    background-color: #74121D;
-    width: 120px;
-    height: 4px;
-    position: absolute;
-    bottom: 0;
-} */
+
+.scroll-section-recommended {
+    width: 1300px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 0 auto;
+
+}

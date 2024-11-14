@@ -122,3 +122,15 @@ footer {
     gap: 30px;
     /* justify-content: space-between; */
 }
+
+/* detalhe vermelho horizontal */
+
+.red-detail {
+    color: transparent;
+    background-color: #74121D;
+    width: 120px;
+    height: 6px;
+    position: absolute;
+    bottom: -2px;
+    left: 15px
+}
