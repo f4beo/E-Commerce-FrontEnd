@@ -3,7 +3,7 @@ const imgs = document.querySelectorAll(".carousel .carousel-img");
 
 let counter = 0;
 function slider() {
-    carousel.style.transform = `translateX(${-counter * 540}px)`;
+    carousel.style.transform = `translateX(${-counter * document.querySelector(".divisor-carrosel").clientWidth}px)`;
 }
 
 function sliderRight(){

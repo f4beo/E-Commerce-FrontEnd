@@ -91,15 +91,21 @@ ul{
 
 .profile-pic{
     max-width: 50px;
-    
 }
 
 /*Content*/
 
 .container{
     min-height: calc(100vh - 264px);
-    max-width: 1600px;
+}
+.wrapper{
     margin: 0 auto;
+    max-width: 1600px;
+}
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*/Content*/
