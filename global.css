@@ -98,6 +98,8 @@ ul{
 
 .container{
     min-height: calc(100vh - 284px);
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 /*/Content*/
