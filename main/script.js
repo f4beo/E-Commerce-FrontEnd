@@ -1,32 +1,28 @@
-const img = document.getElementById('carousel');
-const rightBtn = document.getElementById('right-btn');
-const leftBtn = document.getElementById('left-btn');
+const carousel = document.querySelector(".carousel");
+const imgs = document.querySelectorAll(".carousel .carousel-img");
 
-// Images are from unsplash
-let pictures = ['./img/sofa1.jpg', './img/sofa2.jpg', './img/raque.jpg'];
-
-img.src = pictures[0];
-let position = 0;
-
-const moveRight = () => {
-    if (position >= pictures.length - 1) {
-        position = 0
-        img.src = pictures[position];
-        return;
-    }
-    img.src = pictures[position + 1];
-    position++;
+let counter = 0;
+function slider() {
+    carousel.style.transform = `translateX(${-counter * 540}px)`;
 }
 
-const moveLeft = () => {
-    if (position < 1) {
-        position = pictures.length - 1;
-        img.src = pictures[position];
-        return;
+function sliderRight(){
+    if (counter >= imgs.length-1){
+        counter = 0;
+        slider();
+        return
     }
-    img.src = pictures[position - 1];
-    position--;
+    counter++;
+    slider();
 }
-
-rightBtn.addEventListener("click", moveRight);
-leftBtn.addEventListener("click", moveLeft);
+// setInterval(slider, 2000);
+function sliderLeft(){
+    if (counter <= 0){
+        counter = 0
+        return
+    }
+    counter--;
+    slider();
+}
+document.getElementById("right-btn").addEventListener('click', sliderRight)
+document.getElementById("left-btn").addEventListener('click', sliderLeft)

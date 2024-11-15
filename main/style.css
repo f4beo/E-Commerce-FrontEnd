@@ -25,7 +25,13 @@
         position: relative;
         overflow: hidden;
         .carousel{
-            max-width: 100%;
+            display: flex;
+            transition: 0.7s ease-in-out;
+            transform: translateX(0);
+            /* overflow: hidden; */
+            .carousel-img{
+                max-width: 100%;
+            }
         }
         .carousel-btn {
             /* height: 10%; */
@@ -35,6 +41,7 @@
             padding: 1em;
             display: flex;
             position: absolute;
+            z-index: 99;
         }
         
         .carousel-btn .arrow {
