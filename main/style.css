@@ -4,34 +4,101 @@
 
 .main{
     background-color: #F1E8DC;
+    .main-container{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px 0px;
+    }
+    .title-divisor{
+        margin-bottom: 20px;
+    }
+    .divisor{
+        text-align: center;
+    }
+    .divisor-carrosel{
+        /* background-color: #fff; */
+        width: 540px;
+        height: 330px;
+        border-radius: 3px;
+        position: relative;
+        overflow: hidden;
+        .carousel{
+            max-width: 100%;
+        }
+        .carousel-btn {
+            /* height: 10%; */
+            border: none;
+            background: rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            padding: 1em;
+            display: flex;
+            position: absolute;
+        }
+        
+        .carousel-btn .arrow {
+            border: solid #fff;
+            border-width: 0 2px 2px 0;
+            display: inline-block;
+            padding: 5px;
+            transition: transform 0.3s ease-out;
+            outline: none;
+        }
+        
+        #right-btn {
+            top: 50%;
+            right: 0;
+            .arrow {
+                transform: rotate(-45deg);
+            }
+        }
+        
+        #left-btn{
+            top:50%;
+            left: 0;
+            .arrow {
+                transform: rotate(135deg);
+            }
+        } 
+    }
+    .gallery{
+        width: 540px;
+        height: 330px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        .gallery-element{
+            background-color: #fff;
+        }
+    }
+    
+}
+/* /Main */
+
+/* Section - Departamentos */
+
+.departamentos{
+    background-color: #B4D4EE;
+    .dept-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+
+        padding: 40px;
+
+        .dept-item{
+            height: 300px;
+            width: 300px;
+            border-radius: 12px;
+            background-color: #fff;
+        }
+    }
+
 }
 
-.main-container{
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    padding: 20px 0px;
-}
-
-.divisor{
-    text-align: center;
-}
-
-.divisor-carrosel{
-    background-color: #fff;
-    width: 700px;
-    height: 380px;
-}
-
-.gallery{
-    width: 700px;
-    height: 380px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.gallery-element{
-    background-color: #fff;
-}
+/* /Section - Departamentos */
