@@ -18,7 +18,8 @@ function sliderRight(){
 // setInterval(slider, 2000);
 function sliderLeft(){
     if (counter <= 0){
-        counter = 0
+        counter = imgs.length-1
+        slider();
         return
     }
     counter--;

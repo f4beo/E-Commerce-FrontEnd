@@ -38,10 +38,14 @@
             border: none;
             background: rgba(0, 0, 0, 0.1);
             cursor: pointer;
-            padding: 1em;
+            padding: 0.9em 1.3em;
             display: flex;
             position: absolute;
             z-index: 99;
+            transition: .07s;
+            &:active{
+                background: rgba(0, 0, 0, 0.4);
+            }
         }
         
         .carousel-btn .arrow {
@@ -78,8 +82,7 @@
         .gallery-element{
             background-color: #fff;
         }
-    }
-    
+    }    
 }
 /* /Main */
 
