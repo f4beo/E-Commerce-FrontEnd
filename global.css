@@ -97,7 +97,7 @@ ul{
 /*Content*/
 
 .container{
-    min-height: calc(100vh - 284px);
+    min-height: calc(100vh - 264px);
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -108,7 +108,6 @@ ul{
 .footer {
     background-color: #74121D;
     color: #F1E8DC;
-    margin-top: 20px;
     padding: 50px;
     height: 264px;
 }
