@@ -1,13 +1,22 @@
 @import url(../global.css);
 
+#recommended{
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto 40px;
 
+}
+
+#recommended h2 {
+    margin-bottom: 10px;
+}
 .box-recommended {
     display: inline-block;
     background-color: #fafafa;
     min-width: 150px;
     height: 150px;
     border-radius: 10px;
-    margin: 20px;
+    margin: 5px;
     position: relative;
 }
 
@@ -31,7 +40,7 @@
 
 
 .scroll-section-recommended {
-    width: 1300px;
+    width: 1200px;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
@@ -49,16 +58,14 @@
 }
 .caixa-fundo-azul{
     background-color: #B4D4EE;
-    /* width: 60vw;  */
-    border: 0px;
     border-radius: 5px;
-    padding: 10px 50px 10px 10px;
+    padding: 10px 10px 10px 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
 }
 .img-do-produto{
-    height: 20vh;
+    height: 120px;
     border-radius: 5px;
 
 }
@@ -72,10 +79,15 @@
     margin-top: 8px;
     margin-bottom: 10px;
     gap: 30px;
+    position: relative;
+    align-items: center;
 }
 .informações-produto-principal{
     display: flex;
     gap: 10px;
+}
+.titulo-produto{
+    font-size: 1.3rem;
 }
 .botoes-produto{
     display: flex;
@@ -118,6 +130,7 @@
     background: none;
     cursor:grab;
     border: 0px;
+    margin-top: 2px
 }
 .caixa-info-produto > p {
     justify-self: end;
@@ -129,6 +142,8 @@
 }
 
 .fundo-azul-escuro{
+    display: grid;
+    justify-content: center;
     background: #0A2463;
     border-radius: 6px;
     display: flex;
@@ -184,6 +199,7 @@
     
 }
 .preco{
+    margin-top: 20px;
     font-size: 40px;
     color: white;
     display: inline-block;
@@ -192,13 +208,15 @@
 .finalizar-compra{
     background: #B4D4EE;
     border-radius: 20px;
-    width: 15vw;
+    width: 19vw;
     padding: 10px;
-    text-align: center;
-    font-weight: bold; 
-    font-size: 20px;
     margin-top: 20px;
 
+}
+.finalizar-compra p {
+    text-align: center;
+    font-weight: 600; 
+    font-size: 20px;
 }
 .finalizar-compra button{
     background: none;
@@ -207,7 +225,4 @@
 }
 .fundo-branco{
     cursor: pointer;
-}
-.compra{
-    margin-left: 20px;
 }

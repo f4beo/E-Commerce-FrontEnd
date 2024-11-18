@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style-cart.css">
 </head>
 <body>
-
+    <!-- header -->
     <header class="header">
         <div class="header-container">
             <div class="logo">
@@ -42,16 +42,18 @@
             </div>
         </div>
     </header>
-        <!-- header -->
+
+
         <!-- main -->
         <main class="conteudo-cima">
             <div class="caixa-fundo-azul">
                 <span>seus itens...</span>
                 <div class = "caixa-info-produto">
+                    <span class="red-detail-vertical">-</span>
                     <div class="informações-produto-principal">
                         <img class="img-do-produto" src="./img/VHT01-TRIO-DE-VASOS-HERA-3.jpg" alt="">
                         <div class="conteudo-produto-principal">
-                            <p><strong>Vasos de Hera</strong> </p>
+                            <p class="titulo-produto"><strong>Vasos de Hera</strong></p>
                             <div class="botoes-produto">
                                 <div class="adicionar-tirar">
                                     <button><img src="./img/carbon_add-filled.svg" alt=""></button>
@@ -76,10 +78,11 @@
                     <p>R$00,00</p>
                 </div>
                 <div class = "caixa-info-produto">
+                    <span class="red-detail-vertical">-</span>
                     <div class="informações-produto-principal">
                         <img class="img-do-produto" src="./img/VHT01-TRIO-DE-VASOS-HERA-3.jpg" alt="">
                         <div class="conteudo-produto-principal">
-                            <p><strong>Vasos de Hera</strong> </p>
+                            <p class="titulo-produto"><strong>Vasos de Hera</strong></p>
                             <div class="botoes-produto">
                                 <div class="adicionar-tirar">
                                     <button><img src="./img/carbon_add-filled.svg" alt=""></button>
@@ -104,10 +107,41 @@
                     <p>R$00,00</p>
                 </div>
                 <div class = "caixa-info-produto">
+                    <span class="red-detail-vertical">-</span>
                     <div class="informações-produto-principal">
                         <img class="img-do-produto" src="./img/VHT01-TRIO-DE-VASOS-HERA-3.jpg" alt="">
                         <div class="conteudo-produto-principal">
-                            <p><strong>Vasos de Hera</strong> </p>
+                            <p class="titulo-produto"><strong>Vasos de Hera</strong></p>
+                            <div class="botoes-produto">
+                                <div class="adicionar-tirar">
+                                    <button><img src="./img/carbon_add-filled.svg" alt=""></button>
+                                    <span>0</span>
+                                    <button><img src="./img/lsicon_minus-filled.svg" alt=""></button>
+                                </div>
+                                <div class="salvar-excluir">
+                                <button><img src="./img/tabler_trash-filled.svg" alt=""></button>
+                                <button><img src="./img/stash_save-ribbon.svg" alt=""></button>
+    
+                                </div>
+                            </div>
+                            <p class="info-estoque">estoque: 0</p>
+                        </div>
+                    </div>
+                    <div class="seletor">
+                        <p>mudar variação:</p>
+                        <div class="botao-seletor">
+                            <button><img src="./img/gg_select-o.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <p>R$00,00</p>
+                </div>
+
+                <div class = "caixa-info-produto">
+                    <span class="red-detail-vertical">-</span>
+                    <div class="informações-produto-principal">
+                        <img class="img-do-produto" src="./img/VHT01-TRIO-DE-VASOS-HERA-3.jpg" alt="">
+                        <div class="conteudo-produto-principal">
+                            <p class="titulo-produto"><strong>Vasos de Hera</strong></p>
                             <div class="botoes-produto">
                                 <div class="adicionar-tirar">
                                     <button><img src="./img/carbon_add-filled.svg" alt=""></button>
@@ -145,11 +179,11 @@
                     </div>
                     <div class="itens-escolhidos">
                         <ul class="ul-main">
-                            <li><span>+ item 1..........................................R$0,00</span></li>
-                            <li><span>+ item 2..........................................R$0,00</span></li>
-                            <li><span>+ item 3..........................................R$0,00</span></li>
-                            <li><span>+ frete.............................................R$0,00</span></li>
-                            <li><span>- cupom..........................................R$0,00</span></li>
+                            <li><span>+ item 1.................................................R$0,00</span></li>
+                            <li><span>+ item 2................................................R$0,00</span></li>
+                            <li><span>+ item 3................................................R$0,00</span></li>
+                            <li><span>+ frete...................................................R$0,00</span></li>
+                            <li><span>- cupom...............................................R$0,00</span></li>
                         </ul>
                         <p class="forma-pagamento">ESCOLHER FORMA DE PAGAMENTO:</p>
                     </div>
@@ -167,6 +201,7 @@
 
 
         <section id="recommended">
+            <h2>ADICIONE TAMBÉM:</h2>
             <div class="scroll-section-recommended">
                 <div class="box-recommended">
                     <div class="flex-items">
@@ -174,7 +209,7 @@
                         <span id="price">R$0,00</span>
                     </div>
 
-                    <span class="red-detail">-</span>
+                    <span class="red-detail-horizontal">-</span>
                 </div>
 
                 <div class="box-recommended">
@@ -183,7 +218,7 @@
                         <span id="price">R$0,00</span>
                     </div>
 
-                    <span class="red-detail">-</span>
+                    <span class="red-detail-horizontal">-</span>
                 </div>
 
                 <div class="box-recommended">
@@ -192,7 +227,7 @@
                         <span id="price">R$0,00</span>
                     </div>
 
-                    <span class="red-detail">-</span>
+                    <span class="red-detail-horizontal">-</span>
                 </div>
 
                 <div class="box-recommended">
@@ -201,7 +236,7 @@
                         <span id="price">R$0,00</span>
                     </div>
 
-                    <span class="red-detail">-</span>
+                    <span class="red-detail-horizontal">-</span>
                 </div>
 
                 <div class="box-recommended">
@@ -210,7 +245,7 @@
                         <span id="price">R$0,00</span>
                     </div>
 
-                    <span class="red-detail">-</span>
+                    <span class="red-detail-horizontal">-</span>
                 </div>
 
                 <div class="box-recommended">
@@ -219,7 +254,7 @@
                         <span id="price">R$0,00</span>
                     </div>
 
-                    <span class="red-detail">-</span>
+                    <span class="red-detail-horizontal">-</span>
                 </div>
                 <div class="box-recommended">
                     <div class="flex-items">
@@ -227,7 +262,7 @@
                         <span id="price">R$0,00</span>
                     </div>
 
-                    <span class="red-detail">-</span>
+                    <span class="red-detail-horizontal">-</span>
                 </div>
 
                 <div class="box-recommended">
@@ -236,7 +271,7 @@
                         <span id="price">R$0,00</span>
                     </div>
 
-                    <span class="red-detail">-</span>
+                    <span class="red-detail-horizontal">-</span>
                 </div>
                 
             </div>
@@ -245,18 +280,18 @@
     
 
     <footer class="footer">
-            <div class="footer-content">
-                <div id="departaments">
-                    <h3>departamentos</h3>
-                    <a href="../page/page.html">sala</a>
-                    <a href="../page/page.html">cozinha</a>
-                    <a href="../page/page.html">quarto</a>
-                    <a href="../page/page.html">banheiro</a>
-                    <a href="../page/page.html">terraço</a>
-                    <a href="../page/page.html">lavanderia</a>
-                </div>
-                <div id="contacts">
-                    <h3>contatos</h3>
+        <div class="footer-content">
+            <div id="departaments">
+                <h3>departamentos</h3>
+                <a href="../page/page.html">sala</a>
+                <a href="../page/page.html">cozinha</a>
+                <a href="../page/page.html">quarto</a>
+                <a href="../page/page.html">banheiro</a>
+                <a href="../page/page.html">terraço</a>
+                <a href="../page/page.html">lavanderia</a>
+            </div>
+            <div id="contacts">
+                <h3>contatos</h3>
                     <span>telefone: (81) 90000-0000</span>
                     <span>email: nome@gmail.com</span>
                 </div>
@@ -268,6 +303,9 @@
                         <a href=""><img src="../img/footer/Vector.png" alt=""></a>
                     </div>
                 </div>
+            </div>
+            <div class="direitos-reservados">
+                <p>® nome – Todos os direitos reservados</p>
             </div>
     </footer>
    
