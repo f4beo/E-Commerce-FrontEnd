@@ -157,7 +157,7 @@ ul{
 .red-detail-horizontal {
     color: transparent;
     background-color: #74121D;
-    width: 120px;
+    width: 170px;
     height: 6px;
     position: absolute;
     bottom: -2px;
@@ -174,7 +174,7 @@ ul{
     top: 30px;
 }
 
-@media  (max-width: 1300px) {
+@media  (max-width: 1333px) {
     /* footer */
     
     .footer-content {

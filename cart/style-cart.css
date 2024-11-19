@@ -2,9 +2,9 @@
 
 #recommended{
     display: grid;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto 40px;
-
+    position: relative;
 }
 
 #recommended h2 {
@@ -13,11 +13,28 @@
 .box-recommended {
     display: inline-block;
     background-color: #fafafa;
-    min-width: 150px;
-    height: 150px;
+    min-width: 200px;
+    height: 200px;
     border-radius: 10px;
     margin: 5px;
     position: relative;
+}
+
+
+.button-right {
+    display: block;
+    position: absolute;
+    right: -30px;
+    top: 120px;
+    
+}
+
+.button-left {
+    display: inline-block;
+    position: absolute;
+    left: -30px;
+    top: 120px;
+    
 }
 
 .flex-items {
@@ -40,7 +57,7 @@
 
 
 .scroll-section-recommended {
-    width: 1200px;
+    width: 1600px;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
@@ -54,7 +71,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin: 20px auto;
-    max-width: 1200px;
+    max-width: 1600px;
 }
 .caixa-fundo-azul{
     background-color: #B4D4EE;
@@ -72,7 +89,7 @@
 .caixa-info-produto{
     display: grid;
     grid-template-columns: 1fr 1fr auto;
-    background: white;
+    background: #fafafa;
     border: 0px;
     border-radius: 5px;
     padding: 8px;
