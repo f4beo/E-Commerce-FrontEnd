@@ -1,0 +1,80 @@
+@import url(../global.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+  
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.login {
+    background: #B4D4EE;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+  
+h1 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+}
+  
+.campo {
+    display: grid;
+    gap: 100px;
+    margin-bottom: 10px;
+}
+  
+.campo input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 0.3px solid #fff;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0A2463;
+}
+  
+#entrar-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    background: #123380;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+#entrar-button:hover {
+    background: #0A2463;
+}
+
+#cadastrar-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    background: #74121D;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    /* espaco entrar e cadastrar */
+}
