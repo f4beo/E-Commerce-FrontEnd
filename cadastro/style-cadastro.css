@@ -13,7 +13,7 @@ body {
 }
 
 /* Estilo do contêiner */
-.container {
+.container-cadastro {
     width: 100%;
     max-width: 400px;
     background-color: #B4D4EE;
