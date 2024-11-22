@@ -1,5 +1,16 @@
 @import url(../global.css);
 
+
+.form-carrinho input{
+    border: none;
+}
+#cupom-input {
+    padding: 5px;
+    font-size: 14px;
+    border: none; 
+    outline: none; 
+    background-color: transparent; 
+}
 #recommended{
     display: grid;
     max-width: 1600px;
