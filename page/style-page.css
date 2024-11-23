@@ -3,7 +3,6 @@
 .section-pag{
     display: grid;
     padding: 25px 70px 70px 70px;
-    border: 2px solid black;
     grid-template-columns: 17vw 2fr ;
 }
 
@@ -103,4 +102,8 @@ aside li{
 
 .flex-pag span{
     font-size: 17px;
+}
+
+.salvar{
+    cursor: pointer;
 }
