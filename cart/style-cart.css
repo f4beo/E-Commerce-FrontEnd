@@ -1,6 +1,9 @@
 @import url(../global.css);
 
-
+.botao-seletor img.move-right {
+    transform: translateX(86px); 
+    transition: transform 0.3s ease; 
+}
 .form-carrinho input{
     border: none;
 }
@@ -156,7 +159,7 @@
 }
 .botao-seletor button{
     background: none;
-    cursor:grab;
+    cursor:pointer;
     border: 0px;
     margin-top: 2px
 }
