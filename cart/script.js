@@ -60,3 +60,18 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.querySelectorAll(".excluir").forEach((botao) => {
+    botao.addEventListener("click", (event) => {
+        console.log("Botão clicado:", event.target);
+
+        const caixaProduto = event.target.closest(".caixa-info-produto");
+        console.log("Caixa selecionada:", caixaProduto);
+
+        if (caixaProduto) {
+            caixaProduto.remove();
+        }
+    });
+});
+
+
+
