@@ -10,7 +10,7 @@
   
 .login {
     background: #B4D4EE;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -18,19 +18,16 @@
     max-width: 400px;
 }
   
-h1 {
+.titulo-login {
     margin-bottom: 20px;
-    font-size: 20px;
-    color: #333;
+    color: #000000;
 }
   
-.campo {
-    display: grid;
-    gap: 100px;
+.campo-login {
     margin-bottom: 10px;
 }
   
-.campo input {
+.campo-login input {
     width: 100%;
     padding: 10px;
     font-size: 14px;
@@ -43,32 +40,35 @@ input:focus {
     border-color: #0A2463;
 }
   
-#entrar-button {
-    width: 100%;
+.botao-login {
+    display: inline-block;
     padding: 10px;
-    font-size: 14px;
-    color: #fff;
     background: #123380;
-    border: none;
+    color: white;
+    text-decoration: none;
     border-radius: 5px;
-    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    margin-top: 7px;
 }
-  
-#entrar-button:hover {
+
+.botao-login:hover {
     background: #0A2463;
 }
 
-#cadastrar-button {
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    color: #fff;
-    background: #74121D;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
-.btn-login {
-    margin-bottom: 12px;
+.cadastro-login {
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 10px;
 }
+/* width: 100%;
+padding: 10px;
+font-size: 14px;
+color: #fff;
+background: #123380;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 10px; */
