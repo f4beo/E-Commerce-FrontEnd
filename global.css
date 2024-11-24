@@ -199,22 +199,7 @@ ul{
     }
 }
 
-@media (max-width: 400px) {
-    /* header */
-    .header-container{
-        gap: 10px;
-        max-width: 400px;
-        margin: 0 auto;
-    }
-    .search{
-    display: flex;
-    background-color: transparent;
-    min-width: 0px;
-    }
-    .search-glass-element{
-        width: 40px;
-        margin-right: 10px;
-    }
+@media (max-width: 500px) {
 
     /* footer */
     .footer-content {

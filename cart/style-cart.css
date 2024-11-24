@@ -1,7 +1,10 @@
 @import url(../global.css);
 
+.Variador {
+    margin-left: 3px;
+}
 .botao-seletor img.move-right {
-    transform: translateX(86px); 
+    transform: translateX(65px); 
     transition: transform 0.3s ease; 
 }
 .form-carrinho input{
@@ -26,9 +29,9 @@
 }
 
 #recommended h2 {
-    margin-bottom: 10px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
+
 
 .carousel #product-image {
     position: absolute;
@@ -55,6 +58,7 @@
     max-width: 1600px;
     overflow: hidden;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
   
 .carousel {
@@ -65,7 +69,7 @@
   
 .prev-btn, .next-btn {
     background-color: #f0f0f0;
-    color: white;
+    color: #fafafa;
     border-radius: 100%;
     border: none;
     padding: 2px;
@@ -190,7 +194,7 @@
     border-radius: 45px;
     margin-top: 2px;
     padding: 2px;
-    max-width: 120px;
+    width: 100px;
 }
 .botao-seletor button{
     background: none;
@@ -207,8 +211,7 @@
 }
 
 .fundo-azul-escuro{
-    display: grid;
-    grid-template-columns: 1fr;
+    
     justify-items: center;
     background: #0A2463;
     border-radius: 6px;
@@ -217,7 +220,7 @@
     max-width: 100%;
 }
 .fundo-branco{
-    background: white;
+    background: #fff;
     border-radius: 45px;
     padding: 6px;
     display: flex;
@@ -232,11 +235,11 @@
 }
 
 .compra {
-    width: 95%;
+    width: 100%;
 }
 
 .itens-escolhidos{
-    background: white;
+    background: #fafafa;
     height: 30vh;
     border-radius: 6px;
     padding: 10px;
@@ -261,7 +264,7 @@
 }
 .total-compra{
     display: grid;
-    color: white;
+    color: #fafafa;
     align-items: center;   
     gap: 7px; 
     justify-content: center;
@@ -276,7 +279,7 @@
 .preco{
     margin-top: 20px;
     font-size: 40px;
-    color: white;
+    color: #fafafa;
     display: inline-block;
     justify-content: end;
 }
@@ -307,6 +310,8 @@
         grid-template-columns: 2fr;
     }
     .compra {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
     .preco {
@@ -322,6 +327,7 @@
         height: auto;
     }
     .finalizar-compra {
+        width: 100%;
         border-radius: 8px;
     }
     .caixa-fundo-azul {
@@ -331,4 +337,57 @@
         grid-template-columns: 1fr 1fr;
         margin-left: 20px;
     }
+    .itens-escolhidos {
+        width: 100%;
+        grid-row: 1/4;
+        font-size: 1rem;
+    }
+    .fundo-branco {
+        grid-column: 2;
+    }
+    .informações-produto-principal {
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media (max-width: 500px) {
+
+    .botao-seletor img.move-right {
+        transform: translateX(65px); 
+        transition: transform 0.3s ease; 
+    }
+    .conteudo-cima {
+        width: 400px;
+        margin: 0 auto;
+    }
+    .compra {
+        grid-template-columns: 1fr;
+    }
+    .fundo-branco {
+        grid-column: 1;
+    }
+
+    .caixa-fundo-azul {
+        margin-top: 20px;
+    }
+    .fundo-azul-escuro {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .caixa-info-produto {
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+
+    .price {
+        grid-column: 2;
+        background-color: #0A2463;
+        color: #fafafa;
+        padding: 5px;
+        border-radius: 8px;
+
+    }
+    
 }
