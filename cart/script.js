@@ -51,10 +51,10 @@ document.addEventListener("DOMContentLoaded", function() {
     variadores.forEach(variador => {
         variador.addEventListener('click', function() {
             const imgProduto = this.closest('.caixa-info-produto').querySelector('.img-do-produto');
-            if (imgProduto.src.includes('sofaAlternativo.jpg')) {
+            if (imgProduto.src.includes('sofaDiferente.jpg')) {
                 imgProduto.src = './img/sofa 3.jpg';
             } else {
-                imgProduto.src = './img/sofaAlternativo.jpg'; 
+                imgProduto.src = './img/sofaDiferente.jpg'; 
             }
         });
     });
