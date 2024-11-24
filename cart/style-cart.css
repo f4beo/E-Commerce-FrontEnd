@@ -7,6 +7,10 @@
 .form-carrinho input{
     border: none;
 }
+.fundo-branco input{
+    border: none;
+    outline: none;
+}
 #cupom-input {
     padding: 5px;
     font-size: 14px;
