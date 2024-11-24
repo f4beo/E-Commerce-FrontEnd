@@ -1,8 +1,8 @@
 @import url(../global.css);
 
 #recommended{
-    display: grid;
     max-width: 1600px;
+    display: grid;
     margin: 0 auto 40px;
     position: relative;
 }
@@ -10,7 +10,8 @@
 #recommended h2 {
     margin-bottom: 10px;
 }
-.box-recommended {
+
+.carousel-item {
     display: inline-block;
     background-color: #fafafa;
     min-width: 200px;
@@ -19,24 +20,53 @@
     margin: 5px;
     position: relative;
 }
-
-
-.button-right {
-    display: block;
-    position: absolute;
-    right: -30px;
-    top: 120px;
-    
+/* ------------- começo ------------- */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
-
-.button-left {
-    display: inline-block;
-    position: absolute;
-    left: -30px;
-    top: 120px;
-    
+  
+.carousel {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.3s ease-in-out;
 }
-
+  
+  /* .carousel-item {
+    min-width: 150px;
+    height: 100px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  } */
+  
+.prev-btn, .next-btn {
+    background-color: #f0f0f0;
+    color: white;
+    border-radius: 100%;
+    border: none;
+    padding: 2px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+/* ------------- fim -------------*/
 .flex-items {
     display: flex;
     justify-content: space-between;
@@ -149,7 +179,7 @@
     border: 0px;
     margin-top: 2px
 }
-.caixa-info-produto > p {
+.caixa-info-produto p {
     justify-self: end;
     align-self: center;
     margin-bottom: 10px;
