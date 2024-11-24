@@ -1,14 +1,29 @@
 @import url(../global.css);
 
+.botao-seletor img.move-right {
+    transform: translateX(86px); 
+    transition: transform 0.3s ease; 
+}
+.form-carrinho input{
+    border: none;
+}
+#cupom-input {
+    padding: 5px;
+    font-size: 14px;
+    border: none; 
+    outline: none; 
+    background-color: transparent; 
+}
 #recommended{
     max-width: 1600px;
     display: grid;
-    margin: 0 auto 40px;
+    margin: 0 auto;
     position: relative;
 }
 
 #recommended h2 {
     margin-bottom: 10px;
+    margin-left: 5px;
 }
 
 .carousel-item {
@@ -25,8 +40,9 @@
     display: flex;
     align-items: center;
     position: relative;
-    width: 100%;
+    max-width: 1600px;
     overflow: hidden;
+    margin-bottom: 20px;
 }
   
 .carousel {
@@ -34,17 +50,6 @@
     gap: 10px;
     transition: transform 0.3s ease-in-out;
 }
-  
-  /* .carousel-item {
-    min-width: 150px;
-    height: 100px;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  } */
   
 .prev-btn, .next-btn {
     background-color: #f0f0f0;
@@ -100,6 +105,7 @@
 .conteudo-cima{
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 10px;
     margin: 20px auto;
     max-width: 1600px;
 }
@@ -110,6 +116,7 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
+    margin-left: 20px;
 }
 .img-do-produto{
     height: 120px;
@@ -175,27 +182,28 @@
 }
 .botao-seletor button{
     background: none;
-    cursor:grab;
+    cursor:pointer;
     border: 0px;
     margin-top: 2px
 }
 .caixa-info-produto p {
-    justify-self: end;
+    justify-self: start;
     align-self: center;
     margin-bottom: 10px;
     margin: 0; 
     font-size: 20px; 
-    font-weight: bold; 
 }
 
 .fundo-azul-escuro{
     display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
     background: #0A2463;
     border-radius: 6px;
     display: flex;
-    margin-left: 20px;
+    margin-right: 20px;
     padding: 10px;
+    max-width: 100%;
 }
 .fundo-branco{
     background: white;
@@ -211,6 +219,11 @@
     background: none;
     border: 0px;
 }
+
+.compra {
+    width: 95%;
+}
+
 .itens-escolhidos{
     background: white;
     height: 30vh;
@@ -231,6 +244,10 @@
     margin: 0;
     margin-bottom: 10px;
 } 
+.itens-list {
+    display: flex;
+    justify-content: space-between;
+}
 .total-compra{
     display: grid;
     color: white;
@@ -272,4 +289,34 @@
 }
 .fundo-branco{
     cursor: pointer;
+}
+
+@media (max-width: 1333px) {
+    .conteudo-cima {
+        grid-template-columns: 2fr;
+    }
+    .compra {
+        gap: 10px;
+    }
+    .preco {
+        background-color: #B4D4EE;
+        max-width: 100%;
+        color: black;
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .itens-escolhidos {
+        height: auto;
+    }
+    .finalizar-compra {
+        border-radius: 8px;
+    }
+    .caixa-fundo-azul {
+        margin-right: 20px;
+    }
+    .fundo-azul-escuro {
+        margin-left: 20px;
+    }
 }
