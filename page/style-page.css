@@ -34,8 +34,18 @@ aside li{
 }
 
 .lista-departamento{
-   padding-top: 50px;
+   padding-top: 30px;
 }
+
+.lista-departamento a, #vermais-pag{
+    font-size: 1.2rem;
+}
+
+.lista-departamento h3{
+    font-size: 1.3rem;
+}
+
+
 #vermais-pag{
     color: rgb(248, 70, 70);
 }
@@ -60,7 +70,7 @@ aside li{
 .main-pag h2{ 
     grid-column: 1/-1;
     margin: 0;
-    font-size: 26px;
+    font-size:2rem;
     font-weight: lighter;
 }
 
@@ -74,7 +84,7 @@ aside li{
 
 .descricao-pag{
     display: grid;
-    margin-left: 15px;
+    padding: 10px;
 }
 
 .content-pag-itens img{
@@ -86,7 +96,7 @@ aside li{
 .flex-pag{
     display: flex;
     align-items: center;
-    gap: 27px;
+    gap: 10px 26px;
     margin-bottom: 10px;
     margin-top: 20px;
 }
@@ -96,12 +106,12 @@ aside li{
 }
 
 #preco-pag{
-    font-size: 25px;
+    font-size: 2rem;
     margin-top: 6px;
 }
 
 .flex-pag span{
-    font-size: 17px;
+    font-size: 1.1rem;
 }
 
 .salvar{
