@@ -36,7 +36,14 @@ ul{
 }
 
 .logo{
+    display: flex;
     justify-self: start;
+
+    color: #0A2463;
+}
+
+.logo .m {
+    color: #74121D;
 }
 
 .search{
