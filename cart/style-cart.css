@@ -105,6 +105,12 @@
     padding: 5px;
     border-radius: 50px;
 }
+#price {
+    color: #fafafa;
+    background-color: #0A2463;
+    padding: 5px;
+    border-radius: 8px;
+}
 
 
 .scroll-section-recommended {
@@ -351,6 +357,7 @@
         width: 100%;
         grid-row: 1/4;
         font-size: 1rem;
+        height: 100%;
     }
     .fundo-branco {
         grid-column: 2;
