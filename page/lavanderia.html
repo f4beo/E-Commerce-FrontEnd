@@ -1,263 +1,378 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mobilie | Lavanderia</title>
-    <link rel="stylesheet" href="./style-page.css">
-</head>
-<body>
-    <header class="header">
-        <div class="header-container">
-            <div class="logo">
-                <h1>logo</h1>
-            </div>
-            <div class="search">
-                <input type="text" name="text" id="search-element" class="search-element">
-                <div class="search-glass">
-                    <img src="../img/header/searchglass.svg" alt="Search" class="search-glass-element">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>mobilie | Lavanderia</title>
+        <link rel="stylesheet" href="./style-page.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-container">
+                <a href="../main/index.html">
+                    <div class="logo">
+                        <h1 class="m">m</h1>
+                        <h1>obilie</h1>
+                    </div>
+                </a>
+                <div class="search">
+                    <input type="text" name="text" id="search-element" class="search-element" />
+                    <div class="search-glass">
+                        <img src="../img/header/searchglass.svg" alt="Search" class="search-glass-element" />
+                    </div>
+                </div>
+                <div class="header-action">
+                    <ul class="header-action-list">
+                        <li class="search-icon-disabled">
+                            <button class="search-btn">
+                                <img src="https://www.svgrepo.com/show/157848/search.svg" alt="" width="30px" />
+                            </button>
+                        </li>
+                        <li>
+                            <div class="header-cart">
+                                <a href="../cart/cart.html">
+                                    <img src="../img/header/cart.png" alt="" />
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="popup-login">Login / Cadastrar</button>
+                            <dialog class="modal-Login">
+                                <div class="login-container">
+                                    <div class="login">
+                                        <h1 class="titulo-login">Login</h1>
+                                        <form>
+                                            <div class="campo-login">
+                                                <input type="email" placeholder="E-mail" />
+                                            </div>
+                                            <div class="campo-login">
+                                                <input type="password" placeholder="Senha" />
+                                            </div>
+                                            <a href="./index.html" class="botao-login">Entrar</a>
+                                            <a href="../cadastro/cadastro.html" class="cadastro-login">Cadastrar-se</a>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
+                            <!-- <a href="">Login/Cadastrar</a> -->
+                        </li>
+                        <li>
+                            <div class="profile">
+                                <a href="">
+                                    <img src="../img/header/foto-perfil.webp" alt="" class="profile-pic" />
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="header-action">
-                <ul class="header-action-list">
-                    <li>
-                        <div class="-header-cart">
-                            <a href="../cart/cart.html">
-                                <img src="../img/header/cart.png" alt="">
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="">Login/Cadastrar</a>
-                    </li>
-                    <li>
-                        <div class="profile">
-                            <a href="">
-                                <img src="../img/header/profile.png" alt="" class="profile-pic">
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
+        </header>
 
-    <section class="section-pag">
-
-    <!-- aside  -->
-    <aside>
-        <div class="lista-departamento">
-            <h3>TODOS OS DEPARTAMENTOS</h3>
-            <ul>
-                <li><a href="../page/sala.html">Sala</a></li>
-                <li><a href="../page/cozinha.html">Cozinha</a></li>
-                <li><a href="../page/quarto.html">Quarto</a></li>
-                <li><a href="../page/banheiro.html">Banheiro</a></li>
-                <li><a href="../page/terraco.html">Terraço</a></li>
-                <li><a href="../page/lavanderia.html">Lavanderia</a></li>
-             
-            </ul>
-            <div class="lista-categoria">
-                <h3>NAVEGUE POR CATEGORIA</h3>
+        <section class="section-pag">
+            <!-- aside  -->
+            <aside>
+                <div class="lista-departamento">
+                    <h3>TODOS OS DEPARTAMENTOS</h3>
                     <ul>
-                        <li><a href="./cadeira.html">Cadeira</a></li>
-                        <li><a href="./mesa.html">Mesa</a></li>
-                        <li><a href="./estante.html">Estante</a></li>
+                        <li><a href="../page/sala.html">Sala</a></li>
+                        <li><a href="../page/cozinha.html">Cozinha</a></li>
+                        <li><a href="../page/quarto.html">Quarto</a></li>
+                        <li><a href="../page/banheiro.html">Banheiro</a></li>
+                        <li><a href="../page/terraco.html">Terraço</a></li>
+                        <li><a href="../page/lavanderia.html">Lavanderia</a></li>
                     </ul>
-            </div> 
-        </div>
-    </aside>
-    <!-- -------fim do aside----- -->
+                    <div class="lista-categoria">
+                        <h3>NAVEGUE POR CATEGORIA</h3>
+                        <ul>
+                            <li><a href="./cadeira.html">Cadeira</a></li>
+                            <li><a href="./mesa.html">Mesa</a></li>
+                            <li><a href="./estante.html">Estante</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- -------fim do aside----- -->
 
-
-    <!-- main  -->
-    <main class="main-pag">
-        <h2>TUDO EM <strong>LAVANDERIA</strong></h2><img src="../img/pagina/icons8-cardápio-50 (1).png" alt="" id="menu-pag">
-            <div class="content-pag-itens">
-                <a href="../product/product2.html"> <img class="image-item" src="../img/pagina/armario lavanderia.jpg" alt="armario lavanderia"></a>
+            <!-- main  -->
+            <main class="main-pag">
+                <h2>TUDO EM <strong>LAVANDERIA</strong></h2>
+                <img src="../img/pagina/icons8-cardápio-50 (1).png" alt="" id="menu-pag" />
+                <div class="content-pag-itens">
+                    <a href="../product/product3.html">
+                        <img class="image-item" src="../img/pagina/armario lavanderia.jpg" alt="armario lavanderia"
+                    /></a>
                     <div class="descricao-pag">
-                        <span><Strong>Armário de Lavanderia</Strong></span>
+                        <span><strong>Armário de Lavanderia</strong></span>
                         <span id="preco-pag">R$ 600,00</span>
                         <div class="flex-pag">
-                            <img src="../img/pagina/solar_star-bold.png" alt="" class="estrela">
+                            <img src="../img/pagina/solar_star-bold.png" alt="" class="estrela" />
                             <span>4.5| 100 Vendidos</span>
-                            <img src="../img/pagina/stash_save-ribbon.png" alt="" class="salvar" onclick="mudarImagem()">
+                            <img
+                                src="../img/pagina/stash_save-ribbon.png"
+                                alt=""
+                                class="salvar"
+                                onclick="mudarImagem()"
+                            />
                         </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="content-pag-itens">
-                <a href="../product/product2.html"> <img class="image-item" src="../img/pagina/Balde para Roupas Sujas.jpg" alt="Balde para Roupas Sujas"></a>
+                <div class="content-pag-itens">
+                    <a href="../product/product3.html">
+                        <img
+                            class="image-item"
+                            src="../img/pagina/Balde para Roupas Sujas.jpg"
+                            alt="Balde para Roupas Sujas"
+                    /></a>
                     <div class="descricao-pag">
-                        <span><Strong>Balde para Roupas Sujas</Strong></span>
+                        <span><strong>Balde para Roupas Sujas</strong></span>
                         <span id="preco-pag">R$ 50,00</span>
                         <div class="flex-pag">
-                            <img src="../img/pagina/solar_star-bold.png" alt="" class="estrela">
+                            <img src="../img/pagina/solar_star-bold.png" alt="" class="estrela" />
                             <span>3.5| 13 Vendidos</span>
-                            <img src="../img/pagina/stash_save-ribbon.png" alt="" class="salvar" onclick="mudarImagem()">
+                            <img
+                                src="../img/pagina/stash_save-ribbon.png"
+                                alt=""
+                                class="salvar"
+                                onclick="mudarImagem()"
+                            />
                         </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="content-pag-itens">
-                <a href="../product/product2.html"> <img class="image-item" src="../img/pagina/Prateleiras de Parede.jpg" alt="Prateleiras de Parede"></a>
+                <div class="content-pag-itens">
+                    <a href="../product/product3.html">
+                        <img
+                            class="image-item"
+                            src="../img/pagina/Prateleiras de Parede.jpg"
+                            alt="Prateleiras de Parede"
+                    /></a>
                     <div class="descricao-pag">
-                        <span><Strong>Prateleiras de Parede</Strong></span>
+                        <span><strong>Prateleiras de Parede</strong></span>
                         <span id="preco-pag">R$ 200,00</span>
                         <div class="flex-pag">
-                            <img src="../img/pagina/solar_star-bold.png" alt="" class="estrela">
+                            <img src="../img/pagina/solar_star-bold.png" alt="" class="estrela" />
                             <span>4.5| 566 Vendidos</span>
-                            <img src="../img/pagina/stash_save-ribbon.png" alt="" class="salvar" onclick="mudarImagem()">
+                            <img
+                                src="../img/pagina/stash_save-ribbon.png"
+                                alt=""
+                                class="salvar"
+                                onclick="mudarImagem()"
+                            />
                         </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="content-pag-itens">
-                <a href="../product/product2.html"> <img class="image-item" src="../img/pagina/Carrinho de Roupas.jpg" alt="Carrinho de Roupas"></a>
+                <div class="content-pag-itens">
+                    <a href="../product/product3.html">
+                        <img class="image-item" src="../img/pagina/Carrinho de Roupas.jpg" alt="Carrinho de Roupas"
+                    /></a>
                     <div class="descricao-pag">
-                        <span><Strong>Carrinho de Roupas</Strong></span>
+                        <span><strong>Carrinho de Roupas</strong></span>
                         <span id="preco-pag">R$ 100,00</span>
                         <div class="flex-pag">
-                            <img src="../img/pagina/solar_star-bold.png" alt="" class="estrela">
+                            <img src="../img/pagina/solar_star-bold.png" alt="" class="estrela" />
                             <span>2.5| 454 Vendidos</span>
-                            <img src="../img/pagina/stash_save-ribbon.png" alt="" class="salvar" onclick="mudarImagem()">
+                            <img
+                                src="../img/pagina/stash_save-ribbon.png"
+                                alt=""
+                                class="salvar"
+                                onclick="mudarImagem()"
+                            />
                         </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="content-pag-itens">
-                <a href="../product/product2.html"> <img class="image-item" src="../img/pagina/Banquinho de Lavanderia.jpg" alt="Banquinho de Lavanderia"></a>
+                <div class="content-pag-itens">
+                    <a href="../product/product3.html">
+                        <img
+                            class="image-item"
+                            src="../img/pagina/Banquinho de Lavanderia.jpg"
+                            alt="Banquinho de Lavanderia"
+                    /></a>
                     <div class="descricao-pag">
-                        <span><Strong>Banquinho de Lavanderia</Strong></span>
+                        <span><strong>Banquinho de Lavanderia</strong></span>
                         <span id="preco-pag">R$ 20,00</span>
                         <div class="flex-pag">
-                            <img src="../img/pagina/solar_star-bold.png" alt="" class="estrela">
+                            <img src="../img/pagina/solar_star-bold.png" alt="" class="estrela" />
                             <span>1.5| 67 Vendidos</span>
-                            <img src="../img/pagina/stash_save-ribbon.png" alt="" class="salvar" onclick="mudarImagem()">
+                            <img
+                                src="../img/pagina/stash_save-ribbon.png"
+                                alt=""
+                                class="salvar"
+                                onclick="mudarImagem()"
+                            />
                         </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="content-pag-itens">
-                <a href="../product/product2.html"> <img class="image-item" src="../img/pagina/Mesa de Passar Roupas.jpg" alt="Mesa de Passar Roupas"></a>
+                <div class="content-pag-itens">
+                    <a href="../product/product3.html">
+                        <img
+                            class="image-item"
+                            src="../img/pagina/Mesa de Passar Roupas.jpg"
+                            alt="Mesa de Passar Roupas"
+                    /></a>
                     <div class="descricao-pag">
-                        <span><Strong>Mesa de Passar Roupas</Strong></span>
+                        <span><strong>Mesa de Passar Roupas</strong></span>
                         <span id="preco-pag">R$ 70,00</span>
                         <div class="flex-pag">
-                            <img src="../img/pagina/solar_star-bold.png" alt="" class="estrela">
+                            <img src="../img/pagina/solar_star-bold.png" alt="" class="estrela" />
                             <span>4.5| 76 Vendidos</span>
-                            <img src="../img/pagina/stash_save-ribbon.png" alt="" class="salvar" onclick="mudarImagem()">
+                            <img
+                                src="../img/pagina/stash_save-ribbon.png"
+                                alt=""
+                                class="salvar"
+                                onclick="mudarImagem()"
+                            />
                         </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="content-pag-itens">
-                <a href="../product/product2.html"> <img class="image-item" src="../img/pagina/Armário para Máquina de Lavar.jpg" alt="Armário para Máquina de Lavar"></a>
+                <div class="content-pag-itens">
+                    <a href="../product/product3.html">
+                        <img
+                            class="image-item"
+                            src="../img/pagina/Armário para Máquina de Lavar.jpg"
+                            alt="Armário para Máquina de Lavar"
+                    /></a>
                     <div class="descricao-pag">
-                        <span><Strong>Armário para Máquina de Lavar</Strong></span>
+                        <span><strong>Armário para Máquina de Lavar</strong></span>
                         <span id="preco-pag">R$ 2.000,00</span>
                         <div class="flex-pag">
-                            <img src="../img/pagina/solar_star-bold.png" alt="" class="estrela">
+                            <img src="../img/pagina/solar_star-bold.png" alt="" class="estrela" />
                             <span>4.5| 232 Vendidos</span>
-                            <img src="../img/pagina/stash_save-ribbon.png" alt="" class="salvar" onclick="mudarImagem()">
+                            <img
+                                src="../img/pagina/stash_save-ribbon.png"
+                                alt=""
+                                class="salvar"
+                                onclick="mudarImagem()"
+                            />
                         </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="content-pag-itens">
-                <a href="../product/product2.html"> <img class="image-item" src="../img/pagina/Expositor de Produtos de Limpeza.jpg" alt="Expositor de Produtos de Limpeza"></a>
+                <div class="content-pag-itens">
+                    <a href="../product/product3.html">
+                        <img
+                            class="image-item"
+                            src="../img/pagina/Expositor de Produtos de Limpeza.jpg"
+                            alt="Expositor de Produtos de Limpeza"
+                    /></a>
                     <div class="descricao-pag">
-                        <span><Strong>Expositor de Produtos de Limpeza</Strong></span>
+                        <span><strong>Expositor de Produtos de Limpeza</strong></span>
                         <span id="preco-pag">R$ 20,00</span>
                         <div class="flex-pag">
-                            <img src="../img/pagina/solar_star-bold.png" alt="" class="estrela">
+                            <img src="../img/pagina/solar_star-bold.png" alt="" class="estrela" />
                             <span>2.5| 34 Vendidos</span>
-                            <img src="../img/pagina/stash_save-ribbon.png" alt="" class="salvar" onclick="mudarImagem()">
+                            <img
+                                src="../img/pagina/stash_save-ribbon.png"
+                                alt=""
+                                class="salvar"
+                                onclick="mudarImagem()"
+                            />
                         </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="content-pag-itens">
-                <a href="../product/product2.html"> <img class="image-item" src="../img/pagina/Secador de Roupas de Parede.jpg" alt="Secador de Roupas de Parede"></a>
+                <div class="content-pag-itens">
+                    <a href="../product/product3.html">
+                        <img
+                            class="image-item"
+                            src="../img/pagina/Secador de Roupas de Parede.jpg"
+                            alt="Secador de Roupas de Parede"
+                    /></a>
                     <div class="descricao-pag">
-                        <span><Strong>Secador de Roupas de Parede</Strong></span>
+                        <span><strong>Secador de Roupas de Parede</strong></span>
                         <span id="preco-pag">R$ 200,00</span>
                         <div class="flex-pag">
-                            <img src="../img/pagina/solar_star-bold.png" alt="" class="estrela">
+                            <img src="../img/pagina/solar_star-bold.png" alt="" class="estrela" />
                             <span>4.5| 454 Vendidos</span>
-                            <img src="../img/pagina/stash_save-ribbon.png" alt="" class="salvar" onclick="mudarImagem()">
+                            <img
+                                src="../img/pagina/stash_save-ribbon.png"
+                                alt=""
+                                class="salvar"
+                                onclick="mudarImagem()"
+                            />
                         </div>
+                    </div>
                 </div>
-            </div>
 
-       
-
-            <div class="content-pag-itens">
-                <a href="../product/product2.html"> <img class="image-item" src="../img/pagina/Varal 2 metro.jpg" alt="Varal 2 metro"></a>
+                <div class="content-pag-itens">
+                    <a href="../product/product3.html">
+                        <img class="image-item" src="../img/pagina/Varal 2 metro.jpg" alt="Varal 2 metro"
+                    /></a>
                     <div class="descricao-pag">
-                        <span><Strong> Varal 2 metro</Strong></span>
+                        <span><strong> Varal 2 metro</strong></span>
                         <span id="preco-pag">R$ 50,00</span>
                         <div class="flex-pag">
-                            <img src="../img/pagina/solar_star-bold.png" alt="" class="estrela">
+                            <img src="../img/pagina/solar_star-bold.png" alt="" class="estrela" />
                             <span>4.5| 54 Vendidos</span>
-                            <img src="../img/pagina/stash_save-ribbon.png" alt="" class="salvar" onclick="mudarImagem()">
+                            <img
+                                src="../img/pagina/stash_save-ribbon.png"
+                                alt=""
+                                class="salvar"
+                                onclick="mudarImagem()"
+                            />
                         </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="content-pag-itens">
-                <a href="../product/product2.html"> <img class="image-item" src="../img/pagina/Organizador de Gaveta para Banheiro.jpg" alt="Organizador de Gaveta para Banheiro"></a>
+                <div class="content-pag-itens">
+                    <a href="../product/product3.html">
+                        <img
+                            class="image-item"
+                            src="../img/pagina/Organizador de Gaveta para Banheiro.jpg"
+                            alt="Organizador de Gaveta para Banheiro"
+                    /></a>
                     <div class="descricao-pag">
-                        <span><Strong>Organizador de Itens Pequenos</Strong></span>
+                        <span><strong>Organizador de Itens Pequenos</strong></span>
                         <span id="preco-pag">R$ 50,00</span>
                         <div class="flex-pag">
-                            <img src="../img/pagina/solar_star-bold.png" alt="" class="estrela">
+                            <img src="../img/pagina/solar_star-bold.png" alt="" class="estrela" />
                             <span>4.5| 55 Vendidos</span>
-                            <img src="../img/pagina/stash_save-ribbon.png" alt="" class="salvar" onclick="mudarImagem()">
+                            <img
+                                src="../img/pagina/stash_save-ribbon.png"
+                                alt=""
+                                class="salvar"
+                                onclick="mudarImagem()"
+                            />
                         </div>
+                    </div>
+                </div>
+            </main>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div id="departaments">
+                    <h3>departamentos</h3>
+                    <a href="../page/sala.html">sala</a>
+                    <a href="../page/cozinha.html">cozinha</a>
+                    <a href="../page/quarto.html">quarto</a>
+                    <a href="../page/banheiro.html">banheiro</a>
+                    <a href="../page/terraco.html">terraço</a>
+                    <a href="../page/lavanderia.html">lavanderia</a>
+                </div>
+                <div id="contacts">
+                    <h3>contatos</h3>
+                    <span>telefone: (81) 90000-0000</span>
+                    <span>email: nome@gmail.com</span>
+                </div>
+                <div id="socials">
+                    <h3>redes sociais</h3>
+                    <div class="footer-icons">
+                        <a href=""><img src="../img/footer/ri_instagram-fill.png" alt="" /></a>
+                        <a href=""><img src="../img/footer/akar-icons_facebook-fill.png" alt="" /></a>
+                        <a href=""><img src="../img/footer/Vector.png" alt="" /></a>
+                    </div>
                 </div>
             </div>
-
-
-
-    </main>
-</section>
-
-<footer class="footer">
-    <div class="footer-content">
-        <div id="departaments">
-            <h3>departamentos</h3>
-            <a href="../page/sala.html">sala</a>
-            <a href="../page/cozinha.html">cozinha</a>
-            <a href="../page/quarto.html">quarto</a>
-            <a href="../page/banheiro.html">banheiro</a>
-            <a href="../page/terraco.html">terraço</a>
-            <a href="../page/lavanderia.html">lavanderia</a>
-        </div>
-        <div id="contacts">
-            <h3>contatos</h3>
-            <span>telefone: (81) 90000-0000</span>
-            <span>email: nome@gmail.com</span>
-        </div>
-        <div id="socials">
-            <h3>redes sociais</h3>
-            <div class="footer-icons">
-                <a href=""><img src="../img/footer/ri_instagram-fill.png" alt=""></a>
-                <a href=""><img src="../img/footer/akar-icons_facebook-fill.png" alt=""></a>
-                <a href=""><img src="../img/footer/Vector.png" alt=""></a>
+            <div class="direitos-reservados">
+                <p>® <a href="../main/index.html">mobilie</a> – Todos os direitos reservados</p>
             </div>
-        </div>
-    </div>
-    <div class="direitos-reservados">
-            
-        <p>® <a href="../main/index.html">mobilie</a> – Todos os direitos reservados</p>
-    </div>
-</footer>
+        </footer>
 
-
-
-
-
-    <script src="../page/script.js"></script>
-</body>
+        <script src="../page/script.js"></script>
+    </body>
 </html>

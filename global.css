@@ -258,3 +258,95 @@ ul {
         justify-content: left;
     }
 }
+
+.popup-login {
+    border: none;
+    font-size: 19.2px;
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: bold;
+    background: none;
+    cursor: pointer;
+    color: #000000;
+}
+
+dialog {
+    border: none;
+    box-shadow: 0 0 1em rgb(0, 0, 0, 0.5);
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 80%;
+}
+
+.login {
+    background: #b4d4ee;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.titulo-login {
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.campo-login {
+    margin-bottom: 10px;
+}
+
+.campo-login input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 0.3px solid #fff;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0a2463;
+}
+
+.botao-login {
+    display: inline-block;
+    padding: 10px;
+    background: #123380;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    margin-top: 7px;
+}
+
+.botao-login:hover {
+    background: #0a2463;
+}
+
+.cadastro-login {
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* botao perfil */
+.profile-pic {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    border: 2px solid #0a2463;
+    cursor: pointer;
+    margin-top: 3px;
+}
