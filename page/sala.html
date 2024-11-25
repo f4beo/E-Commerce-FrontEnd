@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>mobilie | Sala</title>
+        <link rel="stylesheet" href="./style-page.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-container">
+                <a href="../main/index.html">
+                    <div class="logo">
+                        <h1 class="m">m</h1>
+                        <h1>obilie</h1>
+                    </div>
+                </a>
+                <div class="search">
+                    <input type="text" name="text" id="search-element" class="search-element" />
+                    <div class="search-glass">
+                        <img src="../img/header/searchglass.svg" alt="Search" class="search-glass-element" />
+                    </div>
+                </div>
+                <div class="header-action">
+                    <ul class="header-action-list">
+                        <li class="search-icon-disabled">
+                            <button class="search-btn">
+                                <img src="https://www.svgrepo.com/show/157848/search.svg" alt="" width="30px" />
+                            </button>
+                        </li>
+                        <li>
+                            <div class="header-cart">
+                                <a href="../cart/cart.html">
+                                    <img src="../img/header/cart.png" alt="" />
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="popup-login">Login / Cadastrar</button>
+                            <dialog class="modal-Login">
+                                <div class="login-container">
+                                    <div class="login">
+                                        <h1 class="titulo-login">Login</h1>
+                                        <form>
+                                            <div class="campo-login">
+                                                <input type="email" placeholder="E-mail" />
+                                            </div>
+                                            <div class="campo-login">
+                                                <input type="password" placeholder="Senha" />
+                                            </div>
+                                            <a href="./index.html" class="botao-login">Entrar</a>
+                                            <a href="../cadastro/cadastro.html" class="cadastro-login">Cadastrar-se</a>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
+                            <!-- <a href="">Login/Cadastrar</a> -->
+                        </li>
+                        <li>
+                            <div class="profile">
+                                <a href="">
+                                    <img src="../img/header/foto-perfil.webp" alt="" class="profile-pic" />
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="section-pag">
+            <aside>
+                <div class="lista-departamento">
+                    <h3>TODOS OS DEPARTAMENTOS</h3>
+                    <ul>
+                        <li><a href="../page/sala.html">Sala</a></li>
+                        <li><a href="../page/cozinha.html">Cozinha</a></li>
+                        <li><a href="../page/quarto.html">Quarto</a></li>
+                        <li><a href="../page/banheiro.html">Banheiro</a></li>
+                        <li><a href="../page/terraco.html">Terraço</a></li>
+                        <li><a href="../page/lavanderia.html">Lavanderia</a></li>
+                    </ul>
+                    <div class="lista-categoria">
+                        <h3>NAVEGUE POR CATEGORIA</h3>
+                        <ul>
+                            <li><a href="./cadeira.html">Cadeira</a></li>
+                            <li><a href="./mesa.html">Mesa</a></li>
+                            <li><a href="./estante.html">Estante</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="main-pag">
+                <h2>TUDO EM <strong>SALA</strong></h2>
+                <img src="../img/pagina/icons8-cardápio-50 (1).png" alt="" id="menu-pag" />
+                <div class="content-pag-itens">
+                    <a href="../product/product2.html">
+                        <img class="image-item" src="../img/pagina/produtos pag/sofa.jpg" alt=""
+                    /></a>
+                    <div class="descricao-pag">
+                        <span><strong>Sofá Retrátil 3 Lugares</strong></span>
+                        <span id="preco-pag">R$ 2.799,00</span>
+                        <div class="flex-pag">
+                            <img src="../img/pagina/solar_star-bold.png" alt="" class="estrela" />
+                            <span>4.5| 250 Vendidos</span>
+                            <img
+                                src="../img/pagina/stash_save-ribbon.png"
+                                alt=""
+                                class="salvar"
+                                onclick="mudarImagem()"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-pag-itens">
+                    <a href="../product/product2.html">
+                        <img
+                            class="image-item"
+                            src="../img/pagina/produtos pag/poltrona-reclinavel.jpg"
+                            alt="Poltrona Marrom reclinável"
+                    /></a>
+                    <div class="descricao-pag">
+                        <span><strong>Poltrona Reclinável</strong></span>
+                        <span id="preco-pag">R$ 899,00</span>
+                        <div class="flex-pag">
+                            <img src="../img/pagina/solar_star-bold.png" alt="" id="estrela" />
+                            <span>4.5| 180 Vendidos</span>
+                            <img
+                                src="../img/pagina/stash_save-ribbon.png"
+                                alt=""
+                                class="salvar"
+                                onclick="mudarImagem()"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-pag-itens">
+                    <a href="../product/product2.html">
+                        <img class="image-item" src="../img/pagina/produtos pag/rack-tv.jpg" alt="Rack para TV marrom"
+                    /></a>
+                    <div class="descricao-pag">
+                        <span><strong>Rack para TV 1,80m</strong></span>
+                        <span id="preco-pag">R$ 1.199,00</span>
+                        <div class="flex-pag">
+                            <img src="../img/pagina/solar_star-bold.png" alt="" id="estrela" />
+                            <span>4.5| 300 Vendidos</span>
+                            <img
+                                src="../img/pagina/stash_save-ribbon.png"
+                                alt=""
+                                class="salvar"
+                                onclick="mudarImagem()"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-pag-itens">
+                    <a href="../product/product2.html">
+                        <img
+                            class="image-item"
+                            src="../img/pagina/produtos pag/mesa-redonda.jpg"
+                            alt="Mesa de centro marrom"
+                    /></a>
+                    <div class="descricao-pag">
+                        <span><strong>Mesinha de Centro Redonda</strong></span>
+                        <span id="preco-pag">R$ 499,00</span>
+                        <div class="flex-pag">
+                            <img src="../img/pagina/solar_star-bold.png" alt="" id="estrela" />
+                            <span>4.5| 150 Vendidos</span>
+                            <img
+                                src="../img/pagina/stash_save-ribbon.png"
+                                alt=""
+                                class="salvar"
+                                onclick="mudarImagem()"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-pag-itens">
+                    <a href="../product/product2.html">
+                        <img
+                            class="image-item"
+                            src="../img/pagina/produtos pag/cadeira-jantar.jpg"
+                            alt="Cadeira Jantar de ferro cinza"
+                    /></a>
+                    <div class="descricao-pag">
+                        <span><strong>Cadeira de Jantar</strong></span>
+                        <span id="preco-pag">R$ 359,00</span>
+                        <div class="flex-pag">
+                            <img src="../img/pagina/solar_star-bold.png" alt="" id="estrela" />
+                            <span>4.5| 230 Vendidos</span>
+                            <img
+                                src="../img/pagina/stash_save-ribbon.png"
+                                alt=""
+                                class="salvar"
+                                onclick="mudarImagem()"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-pag-itens">
+                    <a href="../product/product2.html">
+                        <img
+                            class="image-item"
+                            src="../img/pagina/produtos pag/Estante-livros.jpg"
+                            alt="Estante de livros moderna "
+                    /></a>
+                    <div class="descricao-pag">
+                        <span><strong>Estante de Livros</strong></span>
+                        <span id="preco-pag">R$ 699,00</span>
+                        <div class="flex-pag">
+                            <img src="../img/pagina/solar_star-bold.png" alt="" id="estrela" />
+                            <span>4.5| 100 Vendidos</span>
+                            <img
+                                src="../img/pagina/stash_save-ribbon.png"
+                                alt=""
+                                class="salvar"
+                                onclick="mudarImagem()"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-pag-itens">
+                    <a href="../product/product2.html">
+                        <img
+                            class="image-item"
+                            src="../img/pagina/produtos pag/abajur-mesa.jpg"
+                            alt="Abajur de mesa de madeira"
+                    /></a>
+                    <div class="descricao-pag">
+                        <span><strong>Abajur de Mesa</strong></span>
+                        <span id="preco-pag">R$ 159,90</span>
+                        <div class="flex-pag">
+                            <img src="../img/pagina/solar_star-bold.png" alt="" id="estrela" />
+                            <span>4.5| 150 Vendidos</span>
+                            <img
+                                src="../img/pagina/stash_save-ribbon.png"
+                                alt=""
+                                class="salvar"
+                                onclick="mudarImagem()"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-pag-itens">
+                    <a href="../product/product2.html">
+                        <img
+                            class="image-item"
+                            src="../img/pagina/produtos pag/quadro-branco.jpg"
+                            alt="Quadro branco bonito do mar"
+                    /></a>
+                    <div class="descricao-pag">
+                        <span><strong>Quadro Decorativo</strong></span>
+                        <span id="preco-pag">R$ 249,00</span>
+                        <div class="flex-pag">
+                            <img src="../img/pagina/solar_star-bold.png" alt="" id="estrela" />
+                            <span>4.5| 120 Vendidos</span>
+                            <img
+                                src="../img/pagina/stash_save-ribbon.png"
+                                alt=""
+                                class="salvar"
+                                onclick="mudarImagem()"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-pag-itens">
+                    <a href="../product/product2.html">
+                        <img
+                            class="image-item"
+                            src="../img/pagina/produtos pag/tapete-sala.jpg"
+                            alt="Tapete sala branco"
+                    /></a>
+                    <div class="descricao-pag">
+                        <span><strong>Tapete para Sala</strong></span>
+                        <span id="preco-pag">R$ 399,00</span>
+                        <div class="flex-pag">
+                            <img src="../img/pagina/solar_star-bold.png" alt="" id="estrela" />
+                            <span>4.5| 180 Vendidos</span>
+                            <img
+                                src="../img/pagina/stash_save-ribbon.png"
+                                alt=""
+                                class="salvar"
+                                onclick="mudarImagem()"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-pag-itens">
+                    <a href="../product/product2.html">
+                        <img
+                            class="image-item"
+                            src="../img/pagina/produtos pag/conjuto-mesa.jpg"
+                            alt="Conjunto  mesa e cadeira marrom"
+                    /></a>
+                    <div class="descricao-pag">
+                        <span><strong>Conjunto de Mesa de Jantar 6 Lugares</strong></span>
+                        <span id="preco-pag">R$ 2.299,00</span>
+                        <div class="flex-pag">
+                            <img src="../img/pagina/solar_star-bold.png" alt="" id="estrela" />
+                            <span>4.5| 70 Vendidos</span>
+                            <img
+                                src="../img/pagina/stash_save-ribbon.png"
+                                alt=""
+                                class="salvar"
+                                onclick="mudarImagem()"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-pag-itens">
+                    <a href="../product/product2.html">
+                        <img
+                            class="image-item"
+                            src="../img/pagina/produtos pag/cortina-sala.jpg"
+                            alt="Cortina cinza 4 metros"
+                    /></a>
+                    <div class="descricao-pag">
+                        <span><strong>Cortina para Sala</strong></span>
+                        <span id="preco-pag">R$ 199,00</span>
+                        <div class="flex-pag">
+                            <img src="../img/pagina/solar_star-bold.png" alt="" id="estrela" />
+                            <span>4.5| 150 Vendidos</span>
+                            <img
+                                src="../img/pagina/stash_save-ribbon.png"
+                                alt=""
+                                class="salvar"
+                                onclick="mudarImagem()"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-pag-itens">
+                    <a href="../product/product2.html">
+                        <img
+                            class="image-item"
+                            src="../img/pagina/produtos pag/espelho-retrato.jpg"
+                            alt="Espelho grande marrom"
+                    /></a>
+                    <div class="descricao-pag">
+                        <span><strong>Espelho Decorativo</strong></span>
+                        <span id="preco-pag">R$ 399,00</span>
+                        <div class="flex-pag">
+                            <img src="../img/pagina/solar_star-bold.png" alt="" id="estrela" />
+                            <span>4.5| 60 Vendidos</span>
+                            <img
+                                src="../img/pagina/stash_save-ribbon.png"
+                                alt=""
+                                class="salvar"
+                                onclick="mudarImagem()"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div id="departaments">
+                    <h3>departamentos</h3>
+                    <a href="../page/sala.html">sala</a>
+                    <a href="../page/cozinha.html">cozinha</a>
+                    <a href="../page/quarto.html">quarto</a>
+                    <a href="../page/banheiro.html">banheiro</a>
+                    <a href="../page/terraco.html">terraço</a>
+                    <a href="../page/lavanderia.html">lavanderia</a>
+                </div>
+                <div id="contacts">
+                    <h3>contatos</h3>
+                    <span>telefone: (81) 90000-0000</span>
+                    <span>email: nome@gmail.com</span>
+                </div>
+                <div id="socials">
+                    <h3>redes sociais</h3>
+                    <div class="footer-icons">
+                        <a href=""><img src="../img/footer/ri_instagram-fill.png" alt="" /></a>
+                        <a href=""><img src="../img/footer/akar-icons_facebook-fill.png" alt="" /></a>
+                        <a href=""><img src="../img/footer/Vector.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="direitos-reservados">
+                <p>® <a href="../main/index.html">mobilie</a> – Todos os direitos reservados</p>
+            </div>
+        </footer>
+
+        <script src="../page/script.js"></script>
+    </body>
+</html>

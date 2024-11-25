@@ -1,0 +1,74 @@
+@import url(../global.css);
+
+
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.login {
+    background: #B4D4EE;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+  
+.titulo-login {
+    margin-bottom: 20px;
+    color: #000000;
+}
+  
+.campo-login {
+    margin-bottom: 10px;
+}
+  
+.campo-login input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 0.3px solid #fff;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0A2463;
+}
+  
+.botao-login {
+    display: inline-block;
+    padding: 10px;
+    background: #123380;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    margin-top: 7px;
+}
+
+.botao-login:hover {
+    background: #0A2463;
+}
+
+
+.cadastro-login {
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 10px;
+}
+/* width: 100%;
+padding: 10px;
+font-size: 14px;
+color: #fff;
+background: #123380;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 10px; */

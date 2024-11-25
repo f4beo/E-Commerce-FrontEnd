@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>mobilie | Fogão 4 bocas</title>
+        <link rel="stylesheet" href="./style-product.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-container">
+                <a href="../main/index.html">
+                    <div class="logo">
+                        <h1 class="m">m</h1>
+                        <h1>obilie</h1>
+                    </div>
+                </a>
+                <div class="search">
+                    <input type="text" name="text" id="search-element" class="search-element" />
+                    <div class="search-glass">
+                        <img src="../img/header/searchglass.svg" alt="Search" class="search-glass-element" />
+                    </div>
+                </div>
+                <div class="header-action">
+                    <ul class="header-action-list">
+                        <li class="search-icon-disabled">
+                            <button class="search-btn">
+                                <img src="https://www.svgrepo.com/show/157848/search.svg" alt="" width="30px" />
+                            </button>
+                        </li>
+                        <li>
+                            <div class="header-cart">
+                                <a href="../cart/cart.html">
+                                    <img src="../img/header/cart.png" alt="" />
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="popup-login">Login / Cadastrar</button>
+                            <dialog class="modal-Login">
+                                <div class="login-container">
+                                    <div class="login">
+                                        <h1 class="titulo-login">Login</h1>
+                                        <form>
+                                            <div class="campo-login">
+                                                <input type="email" placeholder="E-mail" />
+                                            </div>
+                                            <div class="campo-login">
+                                                <input type="password" placeholder="Senha" />
+                                            </div>
+                                            <a href="./index.html" class="botao-login">Entrar</a>
+                                            <a href="../cadastro/cadastro.html" class="cadastro-login">Cadastrar-se</a>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
+                            <!-- <a href="">Login/Cadastrar</a> -->
+                        </li>
+                        <li>
+                            <div class="profile">
+                                <a href="">
+                                    <img src="../img/header/foto-perfil.webp" alt="" class="profile-pic" />
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- PRODUTO -->
+        <main id="sessao-produto">
+            <!-- IMAGEM DESTAQUE -->
+            <img id="destaque" src="./img/fogao 1.jpeg" alt="fogao branco" />
+
+            <!-- DETALHES -->
+            <div id="detalhes">
+                <!-- AVALIAÇÕES -->
+                <div id="stars">
+                    <img src="./img/star-svgrepo-com.svg" alt="" />
+                    <img src="./img/star-svgrepo-com.svg" alt="" />
+                    <img src="./img/star-svgrepo-com.svg" alt="" />
+                    <img src="./img/star-svgrepo-com.svg" alt="" />
+                    <img src="./img/star-svgrepo-com.svg" alt="" />
+                    <span> | 0 Avaliações</span>
+                </div>
+
+                <!-- DETALHES CONTINUAÇÃO -->
+                <h1>Fogão 4 bocas</h1>
+                <span id="valor">R$ 139,99</span>
+                <p>ESCOLHER VARIAÇÃO:</p>
+
+                <!-- GALERIA DE IMAGENS -->
+                <ul id="galeria">
+                    <li><img src="./img/fogao 1.jpeg" alt="fogao branco" /></li>
+                    <li><img src="./img/fogao 2.jpeg" alt="fogao preto" /></li>
+                </ul>
+                <div id="det-prod">
+                    <h2>Detalhes do Produto</h2>
+                    <p>Tamanho: 0,50 m x 0,75 m x 0,50 m</p>
+                    <p>Material: Aço Inox</p>
+                    <p>Cores: Branco, Preto</p>
+                </div>
+            </div>
+            <!-- ADICIONAR AO CARRINHO -->
+            <a id="add-carrinho" href="../cart/cart.html"
+                ><img src="./img/add_shopping_cart_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+            /></a>
+        </main>
+
+        <section>
+            <div id="comentarios">
+                <p id="mensagem-coment">
+                    SEM AVALIAÇÕES NO <br />
+                    MOMENTO
+                </p>
+            </div>
+        </section>
+        <section>
+            <div id="comentar">
+                <div id="avalie">
+                    <h2 id="avalie-text">Avalie seu Produto</h2>
+                    <div id="stars">
+                        <img src="./img/star white.svg" alt="" />
+                        <img src="./img/star white.svg" alt="" />
+                        <img src="./img/star white.svg" alt="" />
+                        <img src="./img/star white.svg" alt="" />
+                        <img src="./img/star white.svg" alt="" />
+                    </div>
+                </div>
+                <div id="caixa">
+                    <input id="mensagem" type="text" />
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div id="departaments">
+                    <h3>departamentos</h3>
+                    <a href="../page/sala.html">sala</a>
+                    <a href="../page/cozinha.html">cozinha</a>
+                    <a href="../page/quarto.html">quarto</a>
+                    <a href="../page/banheiro.html">banheiro</a>
+                    <a href="../page/terraco.html">terraço</a>
+                    <a href="../page/lavanderia.html">lavanderia</a>
+                </div>
+                <div id="contacts">
+                    <h3>contatos</h3>
+                    <span>telefone: (81) 90000-0000</span>
+                    <span>email: nome@gmail.com</span>
+                </div>
+                <div id="socials">
+                    <h3>redes sociais</h3>
+                    <div class="footer-icons">
+                        <a href=""><img src="../img/footer/ri_instagram-fill.png" alt="" /></a>
+                        <a href=""><img src="../img/footer/akar-icons_facebook-fill.png" alt="" /></a>
+                        <a href=""><img src="../img/footer/Vector.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="direitos-reservados">
+                <p>® <a href="../main/index.html">mobilie</a> – Todos os direitos reservados</p>
+            </div>
+        </footer>
+
+        <script src="./script-product.js"></script>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+@import url(../global.css);
+
+/* Estilo para o corpo da página */
+
+#body-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilo do conteiner */
+.container-cadastro {
+    width: 100%;
+    max-width: 400px;
+    background-color: #B4D4EE;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo do título */
+.titulo-cadastro {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Estilo do formulário */
+.form-cadastro {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo dos grupos de formulário */
+.campo-cadastro {
+    margin-bottom: 15px;
+}
+
+/* Estilo das labels */
+label {
+    font-size: 14px;
+    color: #2b2b2b;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Estilo dos campos de entrada */
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Efeito de foco nos campos */
+input:focus {
+    border-color: #0A2463;
+    outline: none;
+}
+
+/* Estilo do botão */
+.botao-cadastro {
+    display: inline-block;
+    padding: 10px;
+    background: #123380;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.botao-cadastro:hover {
+    background: #0A2463;
+}
