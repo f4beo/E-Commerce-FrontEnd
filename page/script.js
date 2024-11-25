@@ -18,5 +18,13 @@ function adicionarEventosDeClique() {
     }
 }
 
-// Chama a função para adicionar os eventos de clique
-adicionarEventosDeClique();
+
+
+function clique() {
+    var aside = document.getElementById("aside");
+    if (aside.style.display === "block") {
+        aside.style.display = "none"; // Fecha o menu se estiver visível
+    } else {
+        aside.style.display = "block"; // Abre o menu
+    }
+}
