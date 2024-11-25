@@ -14,8 +14,8 @@
 aside {
     display: grid;
     background-color: white;
-    height: 143vh;
-    width: 17vw;
+    height: 85vh;
+    width: 250px;
     top: 0;
     justify-items: center;
 }
@@ -85,6 +85,7 @@ aside li {
     max-width: 100%;
     transition: all 0.3s ease; /* Para transições suaves */
 }
+
 
 .descricao-pag {
     display: grid;
