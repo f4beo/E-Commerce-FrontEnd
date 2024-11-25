@@ -89,13 +89,21 @@ section{
   color: aliceblue;
 }
 #mensagem{
-  max-width: 100vw;
+  width: 80rem;
+  height: 10rem;
   background-color: #f2f2f2;
   padding: 10px;
   margin: 10px;
   border: 1px solid #ccc;
   color: #333;
   
+}
+#enviar{
+  width: 100px;
+  height: 50px;
+  position: relative;
+  margin: 10px;
+
 }
 #det-prod{
   margin-top: 10px;
@@ -112,6 +120,9 @@ section{
   #detalhes{
     grid-column: 2/-1;
     gap: 20px;
+  }
+  #mensagem{
+    width: 50rem;
   }
 }
 
@@ -131,5 +142,11 @@ section{
   }
   #comentarios{
     margin-top: 400px
+  }
+  #mensagem{
+    width: 20rem;
+  }
+  #stars{
+    width: 15px;
   }
 }
