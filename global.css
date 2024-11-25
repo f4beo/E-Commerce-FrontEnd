@@ -36,7 +36,14 @@ ul{
 }
 
 .logo{
+    display: flex;
     justify-self: start;
+
+    color: #0A2463;
+}
+
+.logo .m {
+    color: #74121D;
 }
 
 .search{
@@ -84,7 +91,6 @@ ul{
 #login {
     font-size: 1.2rem;
     color: #000;
-    font-weight: 600;
 }
 
 .profile-pic{

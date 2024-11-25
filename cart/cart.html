@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho</title>
+    <title>mobilie | Carrinho</title>
     <link rel="stylesheet" href="./style-cart.css">
 </head>
 <body>
     <!-- header -->
     <header class="header">
         <div class="header-container">
-            <div class="logo">
-                <h1>logo</h1>
-            </div>
+
+            <a href="../main/index.html">
+                <div class="logo">
+                    <h1 class="m">m</h1><h1>obilie</h1>
+                </div>
+            </a>
+
             <div class="search">
                 <input type="text" name="text" id="search-element" class="search-element">
                 <div class="search-glass">
@@ -22,7 +26,7 @@
             <div class="header-action">
                 <ul class="header-action-list">
                     <li>
-                        <div class="-header-cart">
+                        <div class="header-cart">
                             <a href="../cart/cart.html">
                                 <img src="../img/header/cart.png" alt="">
                             </a>
@@ -51,9 +55,10 @@
                 <div class = "caixa-info-produto">
                     <span class="red-detail-vertical">-</span>
                     <div class="informações-produto-principal">
-                        <img class="img-do-produto" src="./img/sofa 3.jpg" alt="Sofa Marrom">
-                        <div class="conteudo-produto-principal">
-                            <p class="titulo-produto"><strong>Sofá Marrom</strong></p>
+                        <a href="../product/product2.html"><img class="img-do-produto" src="./img/sofa 3.jpg" alt="Sofa Marrom"></a>
+                        
+                        <div class="conteudo-produto-principal"> 
+                            <p class="titulo-produto"><strong><a href="../product/product2.html">Sofá 4 lugares</a></strong></p>
                             <div class="botoes-produto">
                                 <div class="adicionar-tirar">
                                     <button class="add"><img src="./img/carbon_add-filled.svg" alt=""></button>
@@ -80,9 +85,9 @@
                 <div class = "caixa-info-produto">
                     <span class="red-detail-vertical">-</span>
                     <div class="informações-produto-principal">
-                        <img class="img-do-produto" src="./img/sofa 3.jpg" alt="Sofa Marrom">
+                        <a href="../product/product2.html"><img class="img-do-produto" src="./img/sofa 3.jpg" alt="Sofa Marrom"></a>
                         <div class="conteudo-produto-principal">
-                            <p class="titulo-produto"><strong>Sofá Marrom</strong></p>
+                            <p class="titulo-produto"><strong><a href="../product/product2.html">Sofá 4 lugares</a></strong></p>
                             <div class="botoes-produto">
                                 <div class="adicionar-tirar">
                                     <button class="add"><img src="./img/carbon_add-filled.svg" alt=""></button>
@@ -109,9 +114,9 @@
                 <div class = "caixa-info-produto">
                     <span class="red-detail-vertical">-</span>
                     <div class="informações-produto-principal">
-                        <img class="img-do-produto" src="./img/sofa 3.jpg" alt="Sofa Marrom">
+                        <a href="../product/product2.html"><img class="img-do-produto" src="./img/sofa 3.jpg" alt="Sofa Marrom"></a>
                         <div class="conteudo-produto-principal">
-                            <p class="titulo-produto"><strong>Sofá Marrom</strong></p>
+                            <p class="titulo-produto"><strong><a href="../product/product2.html">Sofá 4 lugares</a></strong></p>
                             <div class="botoes-produto">
                                 <div class="adicionar-tirar">
                                     <button class="add"><img src="./img/carbon_add-filled.svg" alt=""></button>
@@ -139,9 +144,9 @@
                 <div class = "caixa-info-produto">
                     <span class="red-detail-vertical">-</span>
                     <div class="informações-produto-principal">
-                        <img class="img-do-produto" src="./img/sofa 3.jpg" alt="Sofa Marrom">
+                        <a href="../product/product2.html"><img class="img-do-produto" src="./img/sofa 3.jpg" alt="Sofa Marrom"></a>
                         <div class="conteudo-produto-principal">
-                            <p class="titulo-produto"><strong>Sofá Marrom</strong></p>
+                            <p class="titulo-produto"><strong><a href="../product/product2.html">Sofá 4 lugares</a></strong></p>
                             <div class="botoes-produto">
                                 <div class="adicionar-tirar">
                                     <button class="add"><img src="./img/carbon_add-filled.svg" alt=""></button>
@@ -184,11 +189,11 @@
                                 <span>R$0,00</span>
                             </div>
                             <div class="itens-list">
-                                <span>Item 1</span>
+                                <span>Item 2</span>
                                 <span>R$0,00</span>
                             </div>
                             <div class="itens-list">
-                                <span>Item 1</span>
+                                <span>Item 3</span>
                                 <span>R$0,00</span>
                             </div>
                             
@@ -205,6 +210,11 @@
                             
                         </ul>
                         <p class="forma-pagamento">ESCOLHER FORMA DE PAGAMENTO:</p>
+                        <div class="flex-formas-pagamento">
+                            <a href=""><img id="icone-pagamento" src="./img/boleto.png" alt=""></a>
+                            <a href=""><img id="icone-pagamento" src="./img/cartao.png" alt=""></a>
+                            <a href=""><img id="icone-pagamento" src="./img/pix.png" alt=""></a>
+                        </div>
                     </div>
                     <div class="total-compra">
                             <span class="preco">R$00,00</span>                    
@@ -225,7 +235,7 @@
                 <button class="prev-btn"><img class="button-left" src="./img/arrow-left.svg" alt=""></button>
                 <div class="carousel">
                     <div class="carousel-item">
-                        <a href=""><img id="product-image" src="./img/sofaDiferente.jpg" alt=""></a>
+                        <a href=""><img id="product-image" src="../product/img/fogao 1.jpeg" alt=""></a>
                         <div class="flex-items">
                             <a id="add-carrinho" href=""><img src="./img/add_shopping_cart_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
                             <span id="price">R$0,00</span>
@@ -245,7 +255,7 @@
                     </div> 
                     
                     <div class="carousel-item">
-                        <a href=""><img id="product-image" src="./img/sofaDiferente.jpg" alt=""></a>
+                        <a href=""><img id="product-image" src="../product/img/chuveiro branco.jpeg" alt=""></a>
                         <div class="flex-items">
                             <a id="add-carrinho" href=""><img src="./img/add_shopping_cart_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
                             <span id="price">R$0,00</span>
@@ -255,7 +265,7 @@
                     </div> 
     
                     <div class="carousel-item">
-                        <a href=""><img id="product-image" src="./img/sofaDiferente.jpg" alt=""></a>
+                        <a href=""><img id="product-image" src="../product/img/guarda roupa 2.jpg" alt=""></a>
                         <div class="flex-items">
                             <a id="add-carrinho" href=""><img src="./img/add_shopping_cart_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
                             <span id="price">R$0,00</span>
@@ -265,7 +275,7 @@
                     </div> 
     
                     <div class="carousel-item">
-                        <a href=""><img id="product-image" src="./img/sofaDiferente.jpg" alt=""></a>
+                        <a href=""><img id="product-image" src="../product/img/maquina de lavar.jpeg" alt=""></a>
                         <div class="flex-items">
                             <a id="add-carrinho" href=""><img src="./img/add_shopping_cart_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
                             <span id="price">R$0,00</span>
@@ -275,7 +285,7 @@
                     </div> 
     
                     <div class="carousel-item">
-                        <a href=""><img id="product-image" src="./img/sofaDiferente.jpg" alt=""></a>
+                        <a href=""><img id="product-image" src="../product/img/sofa 3.jpg" alt=""></a>
                         <div class="flex-items">
                             <a id="add-carrinho" href=""><img src="./img/add_shopping_cart_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
                             <span id="price">R$0,00</span>
@@ -285,7 +295,7 @@
                     </div> 
     
                     <div class="carousel-item">
-                        <a href=""><img id="product-image" src="./img/sofaDiferente.jpg" alt=""></a>
+                        <a href=""><img id="product-image" src="../product/img/fogao 2.jpeg" alt=""></a>
                         <div class="flex-items">
                             <a id="add-carrinho" href=""><img src="./img/add_shopping_cart_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
                             <span id="price">R$0,00</span>
@@ -295,7 +305,7 @@
                     </div> 
     
                     <div class="carousel-item">
-                        <a href=""><img id="product-image" src="./img/sofaDiferente.jpg" alt=""></a>
+                        <a href=""><img id="product-image" src="../product/img/vaso.jpeg" alt=""></a>
                         <div class="flex-items">
                             <a id="add-carrinho" href=""><img src="./img/add_shopping_cart_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
                             <span id="price">R$0,00</span>
@@ -305,17 +315,7 @@
                     </div> 
     
                     <div class="carousel-item">
-                        <a href=""><img id="product-image" src="./img/sofaDiferente.jpg" alt=""></a>
-                        <div class="flex-items">
-                            <a id="add-carrinho" href=""><img src="./img/add_shopping_cart_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
-                            <span id="price">R$0,00</span>
-                        </div>
-    
-                        <span class="red-detail-horizontal">-</span>
-                    </div> 
-
-                    <div class="carousel-item">
-                        <a href=""><img id="product-image" src="./img/sofaDiferente.jpg" alt=""></a>
+                        <a href=""><img id="product-image" src="../product/img/guarda roupa 2.jpg" alt=""></a>
                         <div class="flex-items">
                             <a id="add-carrinho" href=""><img src="./img/add_shopping_cart_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
                             <span id="price">R$0,00</span>
@@ -325,17 +325,7 @@
                     </div> 
 
                     <div class="carousel-item">
-                        <a href=""><img id="product-image" src="./img/sofaDiferente.jpg" alt=""></a>
-                        <div class="flex-items">
-                            <a id="add-carrinho" href=""><img src="./img/add_shopping_cart_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
-                            <span id="price">R$0,00</span>
-                        </div>
-    
-                        <span class="red-detail-horizontal">-</span>
-                    </div> 
-
-                    <div class="carousel-item">
-                        <a href=""><img id="product-image" src="./img/sofaDiferente.jpg" alt=""></a>
+                        <a href=""><img id="product-image" src="../product/img/guarda roupa 3.jpg" alt=""></a>
                         <div class="flex-items">
                             <a id="add-carrinho" href=""><img src="./img/add_shopping_cart_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
                             <span id="price">R$0,00</span>
@@ -376,7 +366,8 @@
                 </div>
             </div>
             <div class="direitos-reservados">
-                <p>® nome – Todos os direitos reservados</p>
+                
+                <p>® <a href="../main/index.html">mobilie</a> – Todos os direitos reservados</p>
             </div>
     </footer>
    <script src="./script.js"></script>
