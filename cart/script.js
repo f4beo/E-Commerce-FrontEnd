@@ -1,3 +1,4 @@
+
 const adiciona = document.querySelectorAll(".add");
 const diminui = document.querySelectorAll(".minus");
 
@@ -73,5 +74,22 @@ document.querySelectorAll(".excluir").forEach((botao) => {
     });
 });
 
+// recomendados;
 
+const carousel = document.querySelector('.carousel');
+const nextBtn = document.querySelector('.next-btn');
+const prevBtn = document.querySelector('.prev-btn');
+
+let scrollPosition = 1;
+const scrollAmount = 210;
+
+nextBtn.addEventListener('click', () => {
+  scrollPosition -= scrollAmount;
+  carousel.style.transform = `translateX(${scrollPosition}px)`;
+});
+
+prevBtn.addEventListener('click', () => {
+  scrollPosition += scrollAmount;
+  carousel.style.transform = `translateX(${scrollPosition}px)`;
+});
 

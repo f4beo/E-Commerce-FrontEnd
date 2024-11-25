@@ -22,10 +22,7 @@ ul{
 /* Header */
 .header{
     background-color: #B4D4EE;
-    height: 60px;
     padding: 0 50px;
-    
-    
 }
 
 .header-container{
@@ -39,7 +36,14 @@ ul{
 }
 
 .logo{
+    display: flex;
     justify-self: start;
+
+    color: #0A2463;
+}
+
+.logo .m {
+    color: #74121D;
 }
 
 .search{
@@ -87,7 +91,6 @@ ul{
 #login {
     font-size: 1.2rem;
     color: #000;
-    font-weight: 600;
 }
 
 .profile-pic{
@@ -161,7 +164,7 @@ ul{
     height: 6px;
     position: absolute;
     bottom: -2px;
-    left: 15px
+    left: 15px;
 }
 
 .red-detail-vertical {
@@ -175,7 +178,6 @@ ul{
 }
 
 @media  (max-width: 1333px) {
-    /* footer */
     
     .footer-content {
     grid-template-columns: 1fr 1fr;
@@ -203,7 +205,9 @@ ul{
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
+
+    /* footer */
     .footer-content {
         grid-template-columns: 1fr;
         justify-items: left;
