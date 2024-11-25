@@ -26,6 +26,7 @@ img{
 }
 #stars{
   display: flex;
+  width: 15vw;
 }
 
 #valor{
@@ -89,8 +90,8 @@ section{
   color: aliceblue;
 }
 #mensagem{
-  width: 80rem;
-  height: 10rem;
+  width: 80vw;
+  height: 10vh;
   background-color: #f2f2f2;
   padding: 10px;
   margin: 10px;
@@ -121,8 +122,8 @@ section{
     grid-column: 2/-1;
     gap: 20px;
   }
-  #mensagem{
-    width: 50rem;
+  #stars{
+    width: 12px;
   }
 }
 
@@ -143,10 +144,6 @@ section{
   #comentarios{
     margin-top: 400px
   }
-  #mensagem{
-    width: 20rem;
-  }
-  #stars{
-    width: 15px;
-  }
+  
+ 
 }
