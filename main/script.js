@@ -27,3 +27,17 @@ function sliderLeft() {
 }
 document.getElementById("right-btn").addEventListener("click", sliderRight);
 document.getElementById("left-btn").addEventListener("click", sliderLeft);
+
+// botao login
+
+const login = document.querySelector(".popup-login");
+const modalLogin = document.querySelector(".modal-Login");
+const loginClose = document.querySelector("dialog login");
+
+login.onclick = function () {
+    modalLogin.showModal();
+};
+
+buttonClose.onclick = function () {
+    modalLogin.close();
+};

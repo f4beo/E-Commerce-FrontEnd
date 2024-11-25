@@ -1,94 +1,104 @@
 @import "../global.css";
 
-.section-pag{
+/* --------------------- Estilo Geral ----------------------- */
+.section-pag {
     display: grid;
-    padding: 30px;
-    gap: 10px;
-    grid-template-columns: 200px 2fr ;
+    padding: 25px 70px 70px 70px;
+    grid-template-columns: 17vw 2fr;
 }
 
-aside{
+#menu-pag{
+    display: none;
+}
+
+aside {
     display: grid;
     background-color: white;
-    height: 85vh;
-    width: 250px;
-    
-
+    height: 143vh;
+    width: 17vw;
+    top: 0;
+    justify-items: center;
 }
-aside h3{
+
+aside h3 {
     margin: 10px;
     color: #0A2463;
 }
 
-aside a{
+aside a {
     cursor: pointer;
 }
 
-
-aside li{
+aside li {
     margin-left: 30px;
     margin-bottom: 10px;
 }
 
-.lista-departamento a, #vermais-pag{
+.lista-departamento {
+    padding-top: 30px;
+}
+
+.lista-departamento a,
+#vermais-pag {
     font-size: 1.2rem;
 }
 
-.lista-departamento h3{
+.lista-departamento h3 {
     font-size: 1.3rem;
 }
 
-
-#vermais-pag{
+#vermais-pag {
     color: rgb(248, 70, 70);
 }
 
-.lista-categoria h3{
+.lista-categoria h3 {
     color: #0A2463;
 }
-.lista-categoria{
+
+.lista-categoria {
     margin-top: 20px;
 }
 
-/* -----------------FIM DO ASIDE ---------- */
+/* ----------------- Fim do Aside ------------------- */
 
-.main-pag{
+.main-pag {
     display: grid;
     align-self: center;
     justify-self: center;
     max-width: 900px;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px 50px;
-    margin-left: 70px;   
 }
-.main-pag h2{ 
+
+.main-pag h2 {
     grid-column: 1/-1;
     margin: 0;
-    font-size:2rem;
+    font-size: 2rem;
     font-weight: lighter;
 }
 
-.content-pag-itens{
+.content-pag-itens {
     background-color: rgb(255, 255, 255);
     display: grid;
-    /* width: 15vw; */
     border-radius: 10px;
     align-content: start;
+    max-width: 100%;
+    transition: all 0.3s ease; /* Para transições suaves */
 }
 
-
-.descricao-pag{
+.descricao-pag {
     display: grid;
     padding: 10px;
 }
 
-.content-pag-itens img{
+.content-pag-itens img {
     max-width: 100%;
     display: block;
     padding: 13px;
+    transition: transform 0.3s ease; /* Para transições suaves nas imagens */
 }
 
-.flex-pag{
+.flex-pag {
     display: flex;
     align-items: center;
     gap: 10px 26px;
@@ -96,94 +106,410 @@ aside li{
     margin-top: 20px;
 }
 
-.flex-pag img{
+.flex-pag img {
     padding: 0;
 }
 
-#preco-pag{
+#preco-pag {
     font-size: 2rem;
     margin-top: 6px;
 }
 
-.flex-pag span{
-    font-size: 1.3rem;
+.flex-pag span {
+    font-size: 1.1rem;
 }
 
-.salvar{
+.salvar {
     cursor: pointer;
 }
 
-/* ----------- QUEBRAS DE LINHAS  -----------*/
+/* ------------------- Responsividade --------------------- */
 
-@media (max-width: 1333px){
-    .main-pag{
-        grid-template-columns: 1fr 1fr;  
+/* Para telas menores que 1333px */
+@media (max-width: 1333px) {
+     
+    #menu-pag{
+        display: block;
     }
-}
 
-@media (max-width: 800px){
-
-    .main-pag{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 0 auto;
-        gap: 30px 30px;  
+    .section-pag {
+        display: flex;
+        padding: 70px;
+        justify-content: center;
     }
+
     aside {
         display: none;
+        position: absolute;
+        left: 800px;
+        top: 175px;
+        border-radius: 10px;
+        padding: 20px;
     }
-    
-    .section-pag {
-        grid-template-columns: 1fr;
+
+    .main-pag {
+        display: flex;
+        flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
+        justify-content: space-between;
+        gap: 20px 40px;
     }
-    
-    .descricao-pag{
+
+    .main-pag h2 {
+        flex-basis: 80%;
+        margin-right: 70px;
+        font-size: 2rem;
+        font-weight: lighter;
+    }
+
+    .content-pag-itens {
+        flex-basis: 30%; /* Largura mínima de 30% */
+        min-width: 250px; /* Garantir que o item não fique menor que 250px de largura */
+        max-width: 33%; /* Garantir que não ocupe mais do que 33% da largura */
+        background-color: rgb(255, 255, 255);
         display: grid;
-        margin-left: 10px;
+        border-radius: 10px;
+        align-content: start;
+        padding: 15px; /* Padding interno ajustado */
     }
-    
-    .content-pag-itens img{
+
+    .content-pag-itens img {
         max-width: 100%;
         display: block;
-        padding: 8px;
+        padding: 10px; /* Padding ajustado */
+        transition: transform 0.3s ease;
     }
-    
-    .flex-pag{
+
+.lista-departamento{
+    padding: 20px;
+}
+
+    .flex-pag {
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 10px 20px;
         margin-bottom: 10px;
-        margin-top: 12px;
-
+        margin-top: 20px;
     }
-    
-    .flex-pag img{
+
+    .flex-pag img {
         padding: 0;
     }
-    
-    #preco-pag{
-        font-size: 14px;
-        margin-top: 3px;
+
+    #preco-pag {
+        font-size: 1.5rem; /* Reduzir o tamanho do preço */
+        margin-top: 6px;
     }
-    
-    .flex-pag span{
-        font-size: 10px;
+
+    .flex-pag span {
+        font-size: 1rem; /* Reduzir o tamanho da descrição */
     }
-    
-    .salvar{
+
+    .salvar {
         cursor: pointer;
-        max-width: 100%;
-        height: 16px;
     }
-    
-    #estrela{
+
+}
+
+/* --------------------- Responsividade para telas menores ou iguais a 969px --------------------- */
+@media (max-width: 969px) {
+
+    /* Ajuste para o menu */
+    #menu-pag {
+        display: block; /* Exibe o menu em telas menores */
+    }
+
+    /* Ajustes para o layout geral da página */
+    .section-pag {
+        display: flex;
+        padding: 70px; /* Reduzindo o padding */
+        width: 100%; /* Garantir que a largura seja 100% */
+ 
+    }
+
+    /* Ajustes para o aside */
+    aside {
+        display: none; /* Ocultar o aside em telas menores */
+        position: absolute;
+        left: 150px;
+        top: 175px;
+        border-radius: 10px;
+        max-width: 700px;
+        padding: 20px;
+    }
+
+    /* Ajustes no conteúdo principal */
+    .main-pag {
+        display: flex;
+        flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas */
+        gap: 20px 20px; /* Ajusta o espaçamento */
+        justify-content: center;
+        
+    }
+
+    .main-pag h2 {
+        flex-basis: 100%; /* Ocupa toda a largura */
+        margin-right: 0; /* Remove o espaçamento à direita */
+        font-size: 1.8rem; /* Ajuste do tamanho da fonte */
+        margin-left: 52px;
+    }
+
+    #menu-pag{
         max-width: 100%;
-        height: 15px;
+        height: 10vh;
+        flex-basis: 80%;
+        margin-right: 900px;
+        font-size: 2rem;
+        font-weight: lighter;
+        margin-left: 160px;
+    }
+    /* Ajustes no estilo dos itens de conteúdo */
+    .content-pag-itens {
+        display: flex; /* Define o layout flex para os itens dentro de .content-pag-itens */
+        flex-direction: row; /* Alinha os itens na horizontal */
+        flex-wrap: wrap; /* Permite quebra de linha quando necessário */
+        flex-basis: 20%; /* Largura mínima de 48% para cada item */
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 15px;
+        transition: all 0.3s ease;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Ajuste nas imagens dentro de content-pag-itens */
+    .content-pag-itens img {
+        max-width: 100%;
+        display: block;
+        padding: 10px;
+        transition: transform 0.3s ease;
+        height: auto; /* Garante que as imagens sejam proporcionais */
+    }
+
+    /* Ajuste nas descrições */
+    .descricao-pag h3 {
+        font-size: 1.2rem; /* Ajustar o tamanho do título */
+    }
+
+    /* Ajustes para o preço */
+    #preco-pag {
+        font-size: 1.5rem;
+        margin-top: 6px;
+    }
+
+    .flex-pag {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px 20px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .flex-pag img {
+        padding: 0;
+    }
+
+    .flex-pag span {
+        font-size: 1rem;
+    }
+
+    .salvar {
+        cursor: pointer;
+    }
+
+    /* Ajustes para a lista de departamentos */
+    .lista-departamento {
+        padding: 20px 0;
+    }
+
+    .lista-departamento a,
+    #vermais-pag {
+        font-size: 1.1rem;
+    }
+
+    .lista-departamento h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Ajuste da lista de categorias */
+    .lista-categoria h3 {
+        color: #0A2463;
+    }
+
+    .lista-categoria {
+        margin-top: 20px;
     }
 }
 
-@media (max-width: 500px ){
+
+
+/* Para telas menores que 768px */
+@media (max-width: 768px) {
+
+    .content-pag-itens {
+        flex-basis: 100%; /* Tornar os itens de 100% na tela */
+        min-width: 200px; /* A largura mínima é 200px */
+        padding: 10px; /* Reduzir o padding */
+    }
+
+    .content-pag-itens img {
+        padding: 8px; /* Ajustar o padding da imagem */
+    }
+
+    #preco-pag {
+        font-size: 1.2rem; /* Reduzir ainda mais o tamanho do preço */
+    }
+
+    .flex-pag span {
+        font-size: 0.9rem; /* Reduzir a fonte ainda mais */
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    header{
+        display: none;
+    } 
+
+    .content-pag-itens {
+        flex-basis: 100%; /* Tornar os itens de 100% na tela */
+        min-width: 100%; /* A largura mínima é 200px */
+        padding: 10px; /* Reduzir o padding */
+        border: 1px solid greenyellow;
+    }
+
+
+    /* Ajuste para o layout geral da página */
+    .section-pag {
+        display: flex;
+        flex-direction: column; /* Coloca os itens na coluna */
+        padding: 10px; /* Reduz o padding */
+        width: 100%; /* Ocupa toda a largura */
+        margin: 0;
+        
+    }
+
+    /* Ajustes para o aside */
+    aside {
+        display: none; /* Oculta o aside em telas pequenas */
+        position: absolute;
+        top: 100px;
+        left: 73px;
+        width: 28vw;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra em todos os lados */
+    }
+
+   
+    /* Ajustes no conteúdo principal */
     .main-pag {
-        grid-template-columns: 1fr;
+        display: flex;
+        gap: 10px; /* Ajusta o espaçamento entre os itens */
+        width: 100%; /* Garante que a largura seja 100% */
+        flex-wrap: wrap;
+
+
+
+    }
+
+    .main-pag h2 {
+        font-size: 1rem; /* Reduz o tamanho da fonte */
+        text-align: start; /* Centraliza o título */
+        margin-bottom: 5px;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+
+    /* Ajustes nos itens de conteúdo */
+    .content-pag-itens {
+        display: block; /* Exibe os itens em bloco */
+        width: 100%; /* Ocupa toda a largura */
+        min-width: none;
+        margin: 0 auto; /* Centraliza o item */
+        padding: 10px; /* Reduz o padding */
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        
+    }
+
+    #menu-pag{
+        max-width: 100%;
+        height: 5vh;
+        flex-basis: 100%;
+        margin-right: 900px;
+        font-size: 2rem;
+        font-weight: lighter;
+        margin-left: 490px;
+    }
+
+    .content-pag-itens img {
+        max-width: 100%; /* As imagens não ultrapassam a largura do item */
+        height: auto; /* Mantém a proporção das imagens */
+        display: block;
+        padding: 10px;
+    }
+
+    .descricao-pag {
+        padding: 10px;
+        font-size: 0.9rem; /* Ajuste o tamanho da fonte */
+    }
+
+    .flex-pag {
+        display: flex;
+        flex-direction: column; /* Organiza as informações na coluna */
+        gap: 5px; /* Ajusta o espaço entre os itens */
+        align-items: center;
+    }
+
+    /* Ajusta o preço */
+    #preco-pag {
+        font-size: 1.3rem; /* Reduz o tamanho do preço */
+        margin-top: 6px;
+    }
+
+    .flex-pag span {
+        font-size: 0.9rem; /* Reduz o tamanho da descrição */
+    }
+
+    .salvar {
+        cursor: pointer;
+        font-size: 1rem; /* Ajuste no tamanho do botão */
+    }
+
+    aside li {
+        margin-left: 10px;
+        margin-bottom: 0px;
+    }
+    
+    #menu-pag{
+        display: flex;
+        flex-basis: 100%;
+    }
+    /* Ajuste da lista de departamentos */
+    .lista-departamento {
+        padding: 10px 0;
+    
+    }
+
+
+
+    .lista-departamento a,
+    #vermais-pag {
+        font-size: 9px; /* Ajusta o tamanho da fonte */
+
+    }
+
+    .lista-departamento h3 {
+        font-size: 10px;
+    }
+
+    /* Ajuste da lista de categorias */
+    .lista-categoria h3 {
+        color: #0A2463;
+    }
+
+    .lista-categoria {
+        margin-top: 15px;
     }
 }
