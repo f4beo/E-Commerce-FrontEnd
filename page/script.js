@@ -20,3 +20,4 @@ function adicionarEventosDeClique() {
 
 // Chama a função para adicionar os eventos de clique
 adicionarEventosDeClique();
+
