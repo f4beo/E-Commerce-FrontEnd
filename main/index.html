@@ -1,107 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    
-    <header class="header">
-        <div class="header-container">
-            <div class="logo">
-                <h1>logo</h1>
-            </div>
-            <div class="search">
-                <input type="text" name="text" id="search-element" class="search-element">
-                <div class="search-glass">
-                    <img src="../img/header/searchglass.svg" alt="Search" class="search-glass-element">
-                </div>
-            </div>
-            <div class="header-action">
-                <ul class="header-action-list">
-                    <li>
-                        <div class="-header-cart">
-                            <a href="../cart/cart.html">
-                                <img src="../img/header/cart.png" alt="">
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="">Login/Cadastrar</a>
-                    </li>
-                    <li>
-                        <div class="profile">
-                            <a href="">
-                                <img src="../img/header/profile.png" alt="" class="profile-pic">
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    <div class="container">
-        <main class="main flex-center">
-            <div class="main-container wrapper">
-                <div class="divisor divisor-left">
-                    <h2 class="title-divisor">FIQUE POR DENTRO DAS PROMOÇÕES</h2>
-                    <div class="divisor-carrosel">
-                        <button class="carousel-btn" id="left-btn"><span class="arrow"></span></button>
-                        <div class="carousel" id="carousel">
-                            <img class="carousel-img" src="./img/carousel-main/sofa1.jpg" alt="">
-                            <img class="carousel-img"  src="./img/carousel-main/sofa2.jpg" alt="">
-                            <img class="carousel-img"  src="./img/carousel-main/raque.jpg" alt="">
-                        </div>
-                        <button class="carousel-btn" id="right-btn"><span class="arrow"></span></button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Site</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-container">
+                <a href="../main/index.html">
+                    <div class="logo">
+                        <h1 class="m">m</h1>
+                        <h1>obilie</h1>
+                    </div>
+                </a>
+                <div class="search">
+                    <input type="text" name="text" id="search-element" class="search-element" />
+                    <div class="search-glass">
+                        <img src="../img/header/searchglass.svg" alt="Search" class="search-glass-element" />
                     </div>
                 </div>
-                <div class="divisor divisor-right">
-                    <h2 class="title-divisor">PRODUTOS MAIS VENDIDOS</h2>
-                    <div class="gallery">
-                        <div class="gallery-element">
+                <div class="header-action">
+                    <ul class="header-action-list">
+                        <li class="search-icon-disabled">
+                            <button class="search-btn">
+                                <img src="https://www.svgrepo.com/show/157848/search.svg" alt="" width="30px" />
+                            </button>
+                        </li>
+                        <li>
+                            <div class="header-cart">
+                                <a href="../cart/cart.html">
+                                    <img src="../img/header/cart.png" alt="" />
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a id="login" href="">Login/Cadastrar</a>
+                        </li>
+                        <li>
+                            <div class="profile">
+                                <a href="">
+                                    <img src="../img/header/profile.png" alt="" class="profile-pic" />
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <main class="main flex-center">
+                <div class="main-container wrapper">
+                    <div class="divisor divisor-left">
+                        <h2 class="title-divisor">FIQUE POR DENTRO DAS PROMOÇÕES</h2>
+                        <div class="divisor-carrosel">
+                            <button class="carousel-btn" id="left-btn"><span class="arrow"></span></button>
+                            <div class="carousel" id="carousel">
+                                <img class="carousel-img" src="./img/carousel-main/sofa1.jpg" alt="" />
+                                <img class="carousel-img" src="./img/carousel-main/sofa2.jpg" alt="" />
+                                <img class="carousel-img" src="./img/carousel-main/raque.jpg" alt="" />
+                            </div>
+                            <button class="carousel-btn" id="right-btn"><span class="arrow"></span></button>
                         </div>
-                        <div class="gallery-element">
-                        </div>
-                        <div class="gallery-element">
-                        </div>
-                        <div class="gallery-element">
-                        </div>
-                        <div class="gallery-element">
-                        </div>
-                        <div class="gallery-element">
+                    </div>
+                    <div class="divisor divisor-right">
+                        <h2 class="title-divisor">PRODUTOS MAIS VENDIDOS</h2>
+                        <div class="gallery">
+                            <div class="gallery-element">
+                                <img src="../img/pagina/produtos pag/poltrona-reclinavel.jpg" alt="" />
+                                <div class="rating-stars">
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <span class="price"> | 0,00 R$</span>
+                                </div>
+                            </div>
+                            <div class="gallery-element">
+                                <img src="../img/pagina/produtos pag/cadeira-jantar.jpg" alt="" />
+                                <div class="rating-stars">
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <span class="price"> | 0,00 R$</span>
+                                </div>
+                            </div>
+                            <div class="gallery-element">
+                                <img src="../img/pagina/produtos pag/conjuto-mesa.jpg" alt="" />
+                                <div class="rating-stars">
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <span class="price"> | 0,00 R$</span>
+                                </div>
+                            </div>
+                            <div class="gallery-element">
+                                <img src="../img/pagina/produtos pag/cortina-sala.jpg" alt="" />
+                                <div class="rating-stars">
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <span class="price"> | 0,00 R$</span>
+                                </div>
+                            </div>
+                            <div class="gallery-element">
+                                <img src="../img/pagina/produtos pag/Estante-livros.jpg" alt="" />
+                                <div class="rating-stars">
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <span class="price"> | 0,00 R$</span>
+                                </div>
+                            </div>
+                            <div class="gallery-element">
+                                <img src="../img/pagina/produtos pag/poltrona-couro.jpg" alt="" />
+                                <div class="rating-stars">
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <img src="../product/img/star-svgrepo-com.svg" alt="" />
+                                    <span class="price"> | 0,00 R$</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </main>
-        
-        <section class="departamentos flex-center">
-            <div class="wrapper">  
+            </main>
 
-                <h2 class="dept-title">DEPARTAMENTOS</h2>
-                <div class="dept-container">
-                    <div class="dept-item"></div>
-                    <div class="dept-item"></div>
-                    <div class="dept-item"></div>
-                    <div class="dept-item"></div>
-                    <div class="dept-item"></div>
-                    <div class="dept-item"></div>
+            <section class="departamentos flex-center">
+                <div class="wrapper">
+                    <h2 class="dept-title">DEPARTAMENTOS</h2>
+                    <div class="dept-container">
+                        <div class="dept-item">
+                            <a href="../page/sala.html" class="dept-item-link">
+                                <img src="./img/dept/sala.png" alt="" class="dept-item-img" />
+                                <div class="dept-item-hover"><h3>SALA</h3></div>
+                            </a>
+                        </div>
+                        <div class="dept-item">
+                            <a href="../page/cozinha.html" class="dept-item-link">
+                                <img src="./img/dept/cozinha.png" alt="" class="dept-item-img" />
+                                <div class="dept-item-hover"><h3>COZINHA</h3></div>
+                            </a>
+                        </div>
+                        <div class="dept-item">
+                            <a href="../page/quarto.html" class="dept-item-link">
+                                <img src="./img/dept/quarto.png" alt="" class="dept-item-img" />
+                                <div class="dept-item-hover"><h3>QUARTO</h3></div>
+                            </a>
+                        </div>
+                        <div class="dept-item">
+                            <a href="../page/banheiro.html" class="dept-item-link">
+                                <img src="./img/dept/banheiro.png" alt="" class="dept-item-img" />
+                                <div class="dept-item-hover"><h3>BANHEIRO</h3></div>
+                            </a>
+                        </div>
+                        <div class="dept-item">
+                            <a href="../page/terraco.html" class="dept-item-link">
+                                <img src="./img/dept/terraco.png" alt="" class="dept-item-img" />
+                                <div class="dept-item-hover"><h3>TERRAÇO</h3></div>
+                            </a>
+                        </div>
+                        <div class="dept-item">
+                            <a href="../page/lavanderia.html" class="dept-item-link">
+                                <img src="./img/dept/lavanderia.png" alt="" class="dept-item-img" />
+                                <div class="dept-item-hover"><h3>LAVANDERIA</h3></div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </div>
+            </section>
+        </div>
         <footer class="footer">
             <div class="footer-content">
                 <div id="departaments">
                     <h3>departamentos</h3>
-                    <a href="../page/page.html">sala</a>
-                    <a href="../page/page.html">cozinha</a>
-                    <a href="../page/page.html">quarto</a>
-                    <a href="../page/page.html">banheiro</a>
-                    <a href="../page/page.html">terraço</a>
-                    <a href="../page/page.html">lavanderia</a>
+                    <a href="../page/sala.html">sala</a>
+                    <a href="../page/cozinha.html">cozinha</a>
+                    <a href="../page/quarto.html">quarto</a>
+                    <a href="../page/banheiro.html">banheiro</a>
+                    <a href="../page/terraco.html">terraço</a>
+                    <a href="../page/lavanderia.html">lavanderia</a>
                 </div>
                 <div id="contacts">
                     <h3>contatos</h3>
@@ -110,14 +200,14 @@
                 </div>
                 <div id="socials">
                     <h3>redes sociais</h3>
-                <div class="footer-icons">
-                    <a href=""><img src="../img/footer/ri_instagram-fill.png" alt=""></a>
-                    <a href=""><img src="../img/footer/akar-icons_facebook-fill.png" alt=""></a>
-                    <a href=""><img src="../img/footer/Vector.png" alt=""></a>
+                    <div class="footer-icons">
+                        <a href=""><img src="../img/footer/ri_instagram-fill.png" alt="" /></a>
+                        <a href=""><img src="../img/footer/akar-icons_facebook-fill.png" alt="" /></a>
+                        <a href=""><img src="../img/footer/Vector.png" alt="" /></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <script src="./script.js"></script>
-</body>
+        </footer>
+        <script src="./script.js"></script>
+    </body>
 </html>

@@ -6,24 +6,24 @@ function slider() {
     carousel.style.transform = `translateX(${-counter * document.querySelector(".divisor-carrosel").clientWidth}px)`;
 }
 
-function sliderRight(){
-    if (counter >= imgs.length-1){
+function sliderRight() {
+    if (counter >= imgs.length - 1) {
         counter = 0;
         slider();
-        return
+        return;
     }
     counter++;
     slider();
 }
 // setInterval(slider, 2000);
-function sliderLeft(){
-    if (counter <= 0){
-        counter = imgs.length-1
+function sliderLeft() {
+    if (counter <= 0) {
+        counter = imgs.length - 1;
         slider();
-        return
+        return;
     }
     counter--;
     slider();
 }
-document.getElementById("right-btn").addEventListener('click', sliderRight)
-document.getElementById("left-btn").addEventListener('click', sliderLeft)
+document.getElementById("right-btn").addEventListener("click", sliderRight);
+document.getElementById("left-btn").addEventListener("click", sliderLeft);
